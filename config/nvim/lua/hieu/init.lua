@@ -1,0 +1,1 @@
+require 'hieu.config.lazy'
