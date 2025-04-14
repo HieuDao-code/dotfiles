@@ -1,6 +1,6 @@
 site_name: My Neovim Configuration
-site_url: https://hieudao-code.github.io/nvim.config
-repo_url: https://github.com/HieuDao-code/nvim.config
+site_url: https://hieudao-code.github.io/dotfiles
+repo_url: https://github.com/HieuDao-code/dotfiles
 theme:
   name: material
   icon:
