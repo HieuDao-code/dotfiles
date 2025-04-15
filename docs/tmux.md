@@ -29,6 +29,13 @@ tmux source $HOME/.config/.tmux.conf
 
 ## Plugins
 
-| Name                                                                    | Purpose | Dependencies | Notes |
-| ----------------------------------------------------------------------- | ------- | ------------ | ----- |
-| [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) |         |              | ✔️    |
+The plugin manager is [tpm](https://github.com/tmux-plugins/tpm).
+
+| Name                                                                    | Purpose                                               | Dependencies | Notes |
+| ----------------------------------------------------------------------- | ----------------------------------------------------- | ------------ | ----- |
+| [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Seamless navigation between vim panes and tmux splits |              | ✔️    |
+| [tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control)  | Controlling and navigating panes                      |              | ✔️    |
+| [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)          | A set of sensible default options                     |              | ✔️    |
+| [tmux-yank](https://github.com/tmux-plugins/tmux-yank)                  | Copy to the system clipboard                          |              | ✔️    |
+| [tmux-loggign](https://github.com/tmux-plugins/tmux-logging)            | Looging of all outputs in the current pane            |              | ✔️    |
+| [tmux-tokyo-night](https://github.com/janoamaral/tokyo-night-tmux)      | Tokyo night tmux theme                                |              | ✔️    |

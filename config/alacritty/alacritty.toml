@@ -7,3 +7,8 @@ padding.y = 5
 
 decorations = "Full"
 decorations_theme_variant = "Light" # "Dark"
+
+[terminal]
+
+[terminal.shell]
+program = "/bin/bash"
