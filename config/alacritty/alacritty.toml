@@ -8,6 +8,8 @@ padding.y = 5
 decorations = "Full"
 decorations_theme_variant = "Light" # "Dark"
 
+startup_mode = "Maximized"
+
 [terminal]
 
 [terminal.shell]
