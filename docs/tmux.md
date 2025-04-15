@@ -31,11 +31,11 @@ tmux source $HOME/.config/.tmux.conf
 
 The plugin manager is [tpm](https://github.com/tmux-plugins/tpm).
 
-| Name                                                                    | Purpose                                               | Dependencies | Notes |
-| ----------------------------------------------------------------------- | ----------------------------------------------------- | ------------ | ----- |
-| [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Seamless navigation between vim panes and tmux splits |              | ✔️    |
-| [tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control)  | Controlling and navigating panes                      |              | ✔️    |
-| [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)          | A set of sensible default options                     |              | ✔️    |
-| [tmux-yank](https://github.com/tmux-plugins/tmux-yank)                  | Copy to the system clipboard                          |              | ✔️    |
-| [tmux-loggign](https://github.com/tmux-plugins/tmux-logging)            | Looging of all outputs in the current pane            |              | ✔️    |
-| [tmux-tokyo-night](https://github.com/janoamaral/tokyo-night-tmux)      | Tokyo night tmux theme                                |              | ✔️    |
+| Name                                                                    | Purpose                                               | Dependencies                              | Notes |
+| ----------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------- | ----- |
+| [tmux-loggign](https://github.com/tmux-plugins/tmux-logging)            | Looging of all outputs in the current pane            |                                           | ✔️    |
+| [tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control)  | Controlling and navigating panes                      |                                           | ✔️    |
+| [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)          | A set of sensible default options                     |                                           | ✔️    |
+| [tmux-tokyo-night](https://github.com/fabioluciano/tmux-tokyo-night)    | Tokyo night tmux theme                                |                                           | ✔️    |
+| [tmux-yank](https://github.com/tmux-plugins/tmux-yank)                  | Copy to the system clipboard                          | [xclip](https://github.com/astrand/xclip) | ✔️    |
+| [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Seamless navigation between vim panes and tmux splits |                                           | ✔️    |
