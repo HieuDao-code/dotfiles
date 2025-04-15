@@ -168,6 +168,10 @@ Move selection in visual mode or current line
 - `]t` move to next to-do comments
 - `[t` move to previous to-do comments
 
+#### <abbr title="venv-selector.nvim">Venv selection</abbr>
+
+- `<leader>v` search and activate a python virtual environment
+
 ## Working with files and navigating between files
 
 #### <abbr title="harpoon">Harpoon</abbr>
