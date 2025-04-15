@@ -19,6 +19,13 @@ sudo mkdir $HOME/.config/alacritty
 sudo ln -s ~/.dotfiles/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 ```
 
+Set Alacritty as default terminal:
+
+```sh
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator $(which alacritty) 50
+sudo update-alternatives --config x-terminal-emulator
+```
+
 <details><summary>Building from source for Ubuntu</summary>
 
 Make sure you have the rust compiler installed:

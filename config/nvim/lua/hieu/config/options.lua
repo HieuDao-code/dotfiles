@@ -1,6 +1,9 @@
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- vim.cmd.colorscheme 'catppuccin-latte'
+vim.cmd.colorscheme 'kanagawa-wave'
+
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
