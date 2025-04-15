@@ -103,8 +103,7 @@ return {
         prompt_title = '~ dotfiles ~',
         cwd = vim.fn.expand '~/.dotfiles',
         hidden = true,
-
-        file_ignore_patterns = { '%.git/', '%.git$' },
+        file_ignore_patterns = { '%.git/' },
       }
     end, { desc = '[S]earch [D]otfiles' })
 

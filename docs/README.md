@@ -20,7 +20,7 @@ git clone https://github.com/HieuDao-code/kickstart.nvim.git "${XDG_CONFIG_HOME:
 #### create symlinks
 
 ```sh
-ln -s ~/.dotfiles/config/nvim ~/.config/nvim
+ln -s ~/.dotfiles/config/nvim ~/.config/
 mkdir ~/.config/tmux
 ln -s ~/.dotfiles/config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 mkdir ~/.config/alacritty
