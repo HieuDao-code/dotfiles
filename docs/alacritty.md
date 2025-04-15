@@ -2,6 +2,8 @@
 
 [Alacritty](https://github.com/alacritty/alacritty) is a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration. By integrating with other applications, rather than reimplementing their functionality, it manages to provide a flexible set of features with high performance.
 
+## Installation
+
 [Install instructions](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 
 Use Snap:
@@ -13,8 +15,8 @@ sudo apt install snapd
 sudo snap install alacritty --classic
 
 # Create a sysmlink to alacritty.toml from dotfiles
-sudo mkdir ~/.config/alacritty
-sudo ln -s ~/.dotfiles/config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+sudo mkdir $HOME/.config/alacritty
+sudo ln -s ~/.dotfiles/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 ```
 
 <details><summary>Building from source for Ubuntu</summary>
@@ -72,8 +74,8 @@ sudo echo 'fpath+=${ZDOTDIR:-~}/.zsh_functions' >> ${ZDOTDIR:-~}/.zshrc
 sudo cp extra/completions/_alacritty ${ZDOTDIR:-~}/.zsh_functions/_alacritty
 
 # Create a sysmlink to alacritty.toml from dotfiles
-sudo mkdir ~/.config/alacritty
-sudo ln -s ~/.dotfiles/config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+sudo mkdir $HOME/.config/alacritty
+sudo ln -s ~/.dotfiles/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 
 # Remove temporary dir
 cd ..

@@ -4,6 +4,21 @@
 
 Inspired by <https://github.com/nvim-lua/kickstart.nvim>.
 
+## Installation
+
+- Install Neovim>=0.11 (native LSP setup).
+- Install the external dependencies.
+
+```sh
+# Install Neovim and its dependencies
+sudo apt install neovim
+sudo apt update
+sudo apt install make gcc ripgrep unzip git xclip
+
+# Create symlink
+ln -s ~/.dotfiles/config/nvim $HOME/.config/
+```
+
 ## Plugins
 
 I use the plugin manager [**lazy.nvim**](https://github.com/folke/lazy.nvim) to install all plugins. I also use [mini.nvim](https://github.com/echasnovski/mini.nvim) and [snacks.nvim](https://github.com/folke/snacks.nvim/tree/main?tab=readme-ov-file), two collections of plugins for Neovim.
