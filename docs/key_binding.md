@@ -200,6 +200,7 @@ Move selection in visual mode or current line
 #### <abbr title="tmux">Tmux</abbr>
 
 - `<prefix>` key is `<C-a>`
+- `<prefix>I` install new plugins
 
 ##### Attach and detach
 
