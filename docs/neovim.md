@@ -16,7 +16,7 @@ sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip, fd-find
 
 # Create symlink
-ln -s ~/.dotfiles/config/nvim $HOME/.config/
+ln -s $HOME/.dotfiles/config/nvim $HOME/.config/
 ```
 
 ## Plugins

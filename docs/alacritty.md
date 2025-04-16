@@ -16,7 +16,8 @@ sudo snap install alacritty --classic
 
 # Create a sysmlink to alacritty.toml from dotfiles
 sudo mkdir $HOME/.config/alacritty
-sudo ln -s ~/.dotfiles/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+sudo ln -s $HOME/.dotfiles/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+sudo ln -s $HOME/.dotfiles/config/alacritty/themes/ $HOME/.config/alacritty/
 ```
 
 Set Alacritty as default terminal:

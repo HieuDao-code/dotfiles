@@ -12,7 +12,8 @@ sudo apt install tmux
 
 # Create symlinks
 mkdir $HOME/.config/tmux
-ln -s ~/.dotfiles/config/tmux/tmux.conf $HOME/.config/tmux/tmux.conf
+ln -s $HOME/.dotfiles/config/tmux/tmux.conf $HOME/.config/tmux/tmux.conf
+ln -s $HOME/.dotfiles/config/tmux/themes/ $HOME/.config/tmux/
 
 # Setup the tmux plugin manager if it is not already installed.
 rm -rf ~/.tmux/plugins/tpm  || true

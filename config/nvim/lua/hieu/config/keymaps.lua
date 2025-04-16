@@ -43,3 +43,21 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
 -- Smart Paste without losing clipboard
 vim.keymap.set('x', '<leader>p', [["_dP]])
+
+local light_theme = 'catppuccin-latte'
+local dark_theme = 'kanagawa-wave'
+
+-- TODO: get system mode
+local current_theme = 'catppuccin-latte'
+vim.cmd.colorscheme(current_theme)
+
+function ToggleTheme()
+  if current_theme == light_theme then
+    current_theme = dark_theme
+  else
+    current_theme = light_theme
+  end
+  vim.cmd.colorscheme(current_theme)
+end
+
+vim.api.nvim_set_keymap('n', '<leader>tt', ':lua ToggleTheme()<CR>', { desc = 'Toggle light and dark mode', noremap = true, silent = true })
