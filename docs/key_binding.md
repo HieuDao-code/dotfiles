@@ -230,8 +230,8 @@ Move selection in visual mode or current line
 
 ##### Panes management
 
-- `<prefix>%` vertical split (panes side by side)
-- `<prefix>"` horizontal split (one pane below the other)
+- `<prefix>%` split horizontally (panes side by side)
+- `<prefix>"` split vertically (one pane below the other)
 - `<prefix>h-j-k-l` or `<M-Up/Down/Left/Right>` move to other pane
 - `<prefix>x` close current pane
 - `<prefix>!` remove all panes but the current one from the window
