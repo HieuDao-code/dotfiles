@@ -218,8 +218,8 @@ Move selection in visual mode or current line
 ##### Window management
 
 - `<prefix>c` create new window
-- `<M-H>` or `<S-Left>` move to previous window
-- `<M-L>` or `<S-Right>` move to next window
+- `<M-S-h>` or `<S-Left>` move to previous window
+- `<M-S-l>` or `<S-Right>` move to next window
 - `<prefix>0-9` move to window by index number
 
 ##### Session management
