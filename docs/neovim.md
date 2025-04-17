@@ -48,6 +48,7 @@ I use the plugin manager [**lazy.nvim**](https://github.com/folke/lazy.nvim) to 
 | [vim-sleuth](https://github.com/tpope/vim-sleuth)                                             | Smart indentation style detection                                                                      |                                                                                                                                                                                                                                                                                                                                   | ✔️    |
 | [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim) | Improve viewing markdown files |  | ❌ |
 | [undotree](https://github.com/mbbill/undotree) | Visualize undo history |  | ❌ |
+| [trouble.nvim](https://github.com/folke/trouble.nvim?tab=readme-ov-file) | Pretty list for diagnosis and more |  | ❌ |
 
 ### Working with files and navigating between files
 
