@@ -40,3 +40,4 @@ The plugin manager is [tpm](https://github.com/tmux-plugins/tpm).
 | [tmux-tokyo-night](https://github.com/fabioluciano/tmux-tokyo-night)    | Tokyo night tmux theme                                |                                           | ✔️    |
 | [tmux-yank](https://github.com/tmux-plugins/tmux-yank)                  | Copy to the system clipboard                          | [xclip](https://github.com/astrand/xclip) | ✔️    |
 | [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Seamless navigation between vim panes and tmux splits |                                           | ✔️    |
+| [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) | Persists tmux environment across system restarts |  | ✔️ |
