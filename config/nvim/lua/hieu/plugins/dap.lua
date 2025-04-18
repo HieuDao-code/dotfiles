@@ -45,6 +45,7 @@ return {
     vim.keymap.set('n', '<F2>', dap.step_over, { desc = 'Debug: Step Over' })
     vim.keymap.set('n', '<F3>', dap.step_out, { desc = 'Debug: Step Out' })
     vim.keymap.set('n', '<leader>db', dap.toggle_breakpoint, { desc = 'Debug: Toggle Breakpoint' })
+vim.keymap.set('n', '<leader>dB', dap.toggle_breakpoint, { desc = 'Debug: Set Breakpoint condition' })
     vim.keymap.set('n', '<leader>dr', dap.repl.toggle, { desc = 'Debug: Toggle REPL' })
     vim.keymap.set('n', '<leader>dq', dap.terminate, { desc = 'Debug: Terminate debugging' })
     vim.keymap.set('n', '<leader>du', dapui.toggle, { desc = 'Debug: Toggle debugger' })
