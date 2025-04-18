@@ -25,6 +25,10 @@ return {
     -- set use_icons to true if you have a Nerd Font
     statusline.setup { use_icons = vim.g.have_nerd_font }
 
+
+    -- Snippets Engine
+    require('mini.snippets').setup()
+
     -- Add/delete/replace surroundings (brackets, quotes, etc.)
     require('mini.surround').setup {
       mappings = {
