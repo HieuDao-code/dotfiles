@@ -7,6 +7,7 @@ return {
     config = function()
 require('render-markdown').setup({
     completions = { blink = { enabled = true } },
+render_modes = { 'n', 'c', 't' },
 })
 end
 }
