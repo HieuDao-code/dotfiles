@@ -7,9 +7,16 @@
 [Install instructions](https://github.com/tmux/tmux/wiki/Installing)
 
 ```sh
-# Install tmux
+# Install tmux on Ubuntu
 sudo apt install tmux
+```
 
+```sh
+# Install tmux on MacOS
+brew install tmux
+```
+
+```sh
 # Create symlinks
 mkdir $HOME/.config/tmux
 ln -s $HOME/.dotfiles/config/tmux/tmux.conf $HOME/.config/tmux/tmux.conf
