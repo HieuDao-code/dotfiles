@@ -144,6 +144,7 @@ Move selection in visual mode or current line
 - `<F2>` step over
 - `<F3>` step out
 - `<leader>db` toggle breakpoint
+- `<leader>dB` set breakpoint condition
 - `<leader>dr` toggle REPL
 - `<leader>dq` toggle terminate debugger
 - `<leader>du` toggle debugger ui

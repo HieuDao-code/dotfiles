@@ -7,9 +7,16 @@
 [Install instructions](https://github.com/tmux/tmux/wiki/Installing)
 
 ```sh
-# Install tmux
+# Install tmux on Ubuntu
 sudo apt install tmux
+```
 
+```sh
+# Install tmux on MacOS
+brew install tmux
+```
+
+```sh
 # Create symlinks
 mkdir $HOME/.config/tmux
 ln -s $HOME/.dotfiles/config/tmux/tmux.conf $HOME/.config/tmux/tmux.conf
@@ -40,3 +47,4 @@ The plugin manager is [tpm](https://github.com/tmux-plugins/tpm).
 | [tmux-tokyo-night](https://github.com/fabioluciano/tmux-tokyo-night)    | Tokyo night tmux theme                                |                                           | ✔️    |
 | [tmux-yank](https://github.com/tmux-plugins/tmux-yank)                  | Copy to the system clipboard                          | [xclip](https://github.com/astrand/xclip) | ✔️    |
 | [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Seamless navigation between vim panes and tmux splits |                                           | ✔️    |
+| [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) | Persists tmux environment across system restarts |  | ✔️ |

@@ -2,10 +2,11 @@
 return {
   'saghen/blink.cmp',
   -- optional: provides snippets for the snippet source
-  dependencies = { 'rafamadriz/friendly-snippets' },
+  dependencies = { 'rafamadriz/friendly-snippets', 'echasnovski/mini.snippets' },
   -- use a release tag to download pre-built binaries
   version = '1.*',
   opts = {
+snippets = { preset = 'mini_snippets' },
     -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
     -- 'super-tab' for mappings similar to vscode (tab to accept)
     -- 'enter' for enter to accept
