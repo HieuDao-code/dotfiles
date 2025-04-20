@@ -245,6 +245,10 @@ Move selection in visual mode or current line
 - `<prefix>:` access tmux command prompt
 - `<prefix>:setw synchronize-panes on` synchronize panes (to send a command to many hosts)
 
+## <abbr title="i3 (or Aerospace for MacOS)">Window Management</abbr>
+
+- `<M-(0-9)>` move to workspace by index number
+
 ## Git Integration
 
 #### <abbr title="gitsigns.nvim">Gitsigns</abbr>
