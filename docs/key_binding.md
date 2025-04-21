@@ -249,7 +249,7 @@ Move selection in visual mode or current line
 
 - `<M-(0-9)>` move to workspace by index number
 - `<M-S-(0-9)>` move container to workspace by index number
-- `<M-Mouse>` (`<M-CMD-Mouse>` on MacOS) move a container with mouse
+- `<M-LeftMouse>` (`<M-CMD-LeftMouse>` on MacOS) move a container with mouse
 
 ## Git Integration
 
