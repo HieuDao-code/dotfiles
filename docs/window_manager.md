@@ -1,4 +1,4 @@
-# i3 window manager
+# Window manager
 
 [i3](https://github.com/i3/i3) is a tiling window manager.
 
