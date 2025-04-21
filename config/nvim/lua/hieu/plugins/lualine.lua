@@ -2,6 +2,6 @@
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
 opts = {
-options = { theme = 'gruvbox' }
+options = { theme = 'gruvbox-material' }
 }
 }
