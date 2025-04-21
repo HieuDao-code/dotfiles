@@ -73,7 +73,7 @@ I use the plugin manager [**lazy.nvim**](https://github.com/folke/lazy.nvim) to 
 | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- | ------------ | ----- |
 | [fidget.nvim](https://github.com/j-hui/fidget.nvim)                                              | Extensible UI for Neovim notifications and LSP progress messages |              | ✔️    |
 | [mini.icons](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-icons.md)           | File and folder icons                                            |              | ✔️    |
-| [mini.statusline](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-statusline.md) | Minimal and fast statusline module                               |              | ✔️    |
+| [lua line.nvim](https://github.com/nvim-lualine/lualine.nvim) | Fast and easy to configure Neovim statusline                               |              | ❌    |
 | [obsidian.nvim](https://github.com/obsidian-nvim/obsidian.nvim)                                  | Plugin for Obsidian                                              |              | ❌    |
 | [which-key.nvim](https://github.com/folke/which-key.nvim)                                        | Show available keybindings in a popup as you type                |              | ✔️    |
 
