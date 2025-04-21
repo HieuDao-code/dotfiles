@@ -28,4 +28,10 @@ brew install --cask nikitabobko/tap/aerospace
 # Create symlink
 mkdir $HOME/.config/aerospace
 ln -s $HOME/.dotfiles/config/aerospace/aerospace.toml $HOME/.config/aerospace/aerospace.toml
+
+# Move windows by holding ctrl + cmd
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
+# Disable windows opening animations
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 ```
