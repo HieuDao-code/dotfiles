@@ -248,7 +248,7 @@ Move selection in visual mode or current line
 ## <abbr title="i3 (or Aerospace for MacOS)">Window Management</abbr>
 
 - `<M-(0-9)>` move to workspace by index number
-- `<M-S-(0-9)>` move window to workspace by index number
+- `<M-S-(0-9)>` move container to workspace by index number
 
 ## Git Integration
 
