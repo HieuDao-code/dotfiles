@@ -9,7 +9,11 @@ options = { theme = 'gruvbox-material',
 sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename', 'harpoon2'},
+    lualine_c = {'filename', {
+            'harpoon2',
+            indicators = { '1', '2', '3', '4', '5' },
+            active_indicators = { '[1]', '[2]', '[3]', '[4]', '[5]' },
+          },},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
