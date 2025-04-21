@@ -40,5 +40,5 @@ nav:
       - neovim.md
       - tmux.md
       - alacritty.md
-      - i3.md
+      - window_manager.md
   - key_binding.md
