@@ -83,15 +83,15 @@ Move selection in visual mode or current line
 - `]F` next method/function def end
 - `]c` next class start
 - `]C` next class end
-- `]a` next parameter/arguement start
-- `]A` next parameter/arguement end
+- `]a` next parameter/argument start
+- `]A` next parameter/argument end
 
 - `[f` prev method/function def start
 - `[F` prev method/function def end
 - `[c` prev class start
 
-- `[a` prev parameter/arguement start
-- `[A` prev parameter/arguement end
+- `[a` prev parameter/argument start
+- `[A` prev parameter/argument end
 
 #### Language Server Protocol
 
