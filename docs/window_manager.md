@@ -16,6 +16,8 @@ sudo apt install i3
 # Create symlink
 mkdir $HOME/.config/i3
 ln -s $HOME/.dotfiles/config/i3/config $HOME/.config/i3/config
+mkdir $HOME/.config/i3status
+ln -s $HOME/.dotfiles/config/i3status/config $HOME/.config/i3status/config
 ```
 
 To install aerospace for MacOS use the following commands:
