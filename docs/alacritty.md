@@ -27,6 +27,16 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 sudo update-alternatives --config x-terminal-emulator
 ```
 
+For MacOS
+
+```sh
+brew install --cask alacritty
+# Create a sysmlink to alacritty.toml from dotfiles
+mkdir $HOME/.config/alacritty
+ln -s $HOME/.dotfiles/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+ln -s $HOME/.dotfiles/config/alacritty/themes/ $HOME/.config/alacritty/
+```
+
 <details><summary>Building from source for Ubuntu</summary>
 
 Make sure you have the rust compiler installed:
