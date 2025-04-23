@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 # Symlink with Stow
-stow -D config
+stow --delete config
 stow —target=$HOME/.config config
