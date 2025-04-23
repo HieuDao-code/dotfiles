@@ -27,9 +27,9 @@ echo "os identified as: $os
 
 # Install Stow
 echo "Installing Stow..."
-if [[ "$un" =~ [Dd]arwin ]]; then
+if [[ "$os" == "osx" ]]; then
     brew install stow
-elif [[ "$un" =~ [Uu]buntu ]]; then
+if [[ "$os" == "ubuntu" ]]; then
     sudo apt install -y stow
 
 # Symlink with Stow
