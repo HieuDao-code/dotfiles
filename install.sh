@@ -26,7 +26,11 @@ echo "os identified as: $os
 
 
 # Install Stow
-sudo apt install -y stow
+echo "Installing Stow..."
+if [[ "$un" =~ [Dd]arwin ]]; then
+    brew install stow
+elif [[ "$un" =~ [Uu]buntu ]]; then
+    sudo apt install -y stow
 
 # Symlink with Stow
 stow --delete config
