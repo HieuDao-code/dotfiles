@@ -4,7 +4,10 @@
 
 [Install instructions](https://felixkratz.github.io/SketchyBar/setup)
 
-
+```sh
+brew tap FelixKratz/formulae
+brew install sketchybar
+```
 
 
 
