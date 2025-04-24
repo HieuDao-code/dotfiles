@@ -9,7 +9,10 @@ if ask "$os: Install/Update aerospace and skethybar?" Y; then
 
         # Disable windows opening animations
         defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+
         echo "$os: Installing Sketchybar..."
+        brew tap FelixKratz/formulae
+        brew install sketchybar
 
     elif [[ "$os" == "ubuntu" ]]; then
         echo "$os: Installing i3..."
