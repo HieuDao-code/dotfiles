@@ -6,6 +6,6 @@ if ask "$os: Install/Update tmux?" Y; then
         brew install ripgrep fd
     elif [[ "$os" == "ubuntu" ]]; then
         sudo apt install -y neovim
-        sudo apt install -y make gcc ripgrep unzip git xclip, fd-find
+        sudo apt install -y make gcc ripgrep unzip xclip, fd-find
     fi
 fi
