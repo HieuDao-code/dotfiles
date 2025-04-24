@@ -41,4 +41,5 @@ nav:
       - tmux.md
       - alacritty.md
       - window_manager.md
+      - sketchybar.md
   - key_binding.md
