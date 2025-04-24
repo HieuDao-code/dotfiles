@@ -6,6 +6,7 @@ if [[ "$os" == "osx" ]]; then
         if ask "$os: HomeBrew is not installed. Install it?" Y; then
             echo "$os: Installing HomeBrew..."
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+            # Add Homebrew to PATH
             echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> $HOME/.zprofile
             # If there was an error, it might be this issue:
             echo "If you see an error above, run:"
