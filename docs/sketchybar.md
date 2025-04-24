@@ -15,5 +15,5 @@ brew install sketchybar
 When you use/create additional plugins, make sure that they are made executable via
 
 ```sh
-chmod +x name/of/plugin.sh
+chmod +x $HOME/.config/sketchybar/plugins/*
 ```
