@@ -35,7 +35,7 @@ for file in ./install/*; do
 done
 
 # Install Stow
-echo "Installing Stow..."
+echo "$os: installing Stow..."
 if [[ "$os" == "osx" ]]; then
     brew install stow
 if [[ "$os" == "ubuntu" ]]; then
