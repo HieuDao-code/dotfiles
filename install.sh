@@ -46,5 +46,6 @@ stow --delete config
 stow --target=$HOME/.config config
 stow bin
 
-# Make skethybar plugins executable
-chmod +x $HOME/.config/sketchybar/plugins/*
+# Make sketchybar plugins executable
+if [[ "$os" == "osx" ]]; then
+    chmod +x $HOME/.config/sketchybar/plugins/*
