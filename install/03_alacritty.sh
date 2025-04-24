@@ -8,5 +8,5 @@ if [[ "$os" == "osx" ]]; then
     sudo update-alternatives --config x-terminal-emulator
 
 elif [[ "$os" == "ubuntu" ]]; then
-    sudo apt install -y git
+    brew install --cask alacritty
 fi
