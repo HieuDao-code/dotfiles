@@ -35,3 +35,5 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 # Disable windows opening animations
 defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 ```
+
+Make sure to use [Sketchybar](sketchybar.md).
