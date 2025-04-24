@@ -19,6 +19,7 @@ if [[ "$os" == "osx" ]]; then
         echo "$os: Updating brew..."
         brew update
     fi
+
 elif [[ "$os" == "ubuntu" ]]; then
     if ask "$os: update apt?" Y; then
         echo "$os: Updating apt..."
