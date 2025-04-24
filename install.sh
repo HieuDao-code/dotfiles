@@ -45,3 +45,6 @@ if [[ "$os" == "ubuntu" ]]; then
 stow --delete config
 stow --target=$HOME/.config config
 stow bin
+
+# Make skethybar plugins executable
+chmod +x $HOME/.config/sketchybar/plugins/*
