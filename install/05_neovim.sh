@@ -6,7 +6,5 @@ if ask "$os: Install/Update tmux?" Y; then
     elif [[ "$os" == "ubuntu" ]]; then
         sudo apt install neovim
         sudo apt install make gcc ripgrep unzip git xclip, fd-find
-
-# Crea
     fi
 fi
