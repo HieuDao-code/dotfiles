@@ -35,3 +35,4 @@ if [[ "$os" == "ubuntu" ]]; then
 # Symlink with Stow
 stow --delete config
 stow --target=$HOME/.config config
+stow bin
