@@ -10,7 +10,7 @@ if ask "$os: Install python tooling?" Y; then
 
     fi
 
-    echo "$os: Add shell completion for UV and UV x..."
+    echo "$os: Add shell completion for uv and uvx..."
     echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
     echo 'eval "$(uvx --generate-shell-completion zsh)"' >> ~/.zshrc 
     
