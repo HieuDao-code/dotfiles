@@ -4,6 +4,8 @@ if ask "$os: Install python tooling?" Y; then
         brew install uv
 
     elif [[ "$os" == "ubuntu" ]]; then
+        sudo apt install -y pipx
+        pipx ensurepath
         pipx install uv
 
     fi
