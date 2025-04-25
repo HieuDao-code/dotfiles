@@ -42,4 +42,5 @@ nav:
       - alacritty.md
       - window_manager.md
       - sketchybar.md
+      - python.md
   - key_binding.md
