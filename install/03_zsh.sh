@@ -7,8 +7,4 @@ if ask "$os: install or upgrade zsh?" N; then
         sudo apt install -y zsh
     fi
 
-    echo "$os: Add shell completion for zsh..."
-    echo 'autoload -Uz compinit' >> ~/.zshrc
-    echo 'compinit' >> ~/.zshrc
-
 fi
