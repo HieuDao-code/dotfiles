@@ -32,7 +32,7 @@ return {
     sections = {
       lualine_a = { 'mode' },
       lualine_b = { { 'FugitiveHead', icon = '' }, { 'diff', source = diff_source }, 'diagnostics' },
-      lualine_c = { 'filename' },
+      lualine_c = { { 'filename', path = 1 } },
       lualine_x = {
         {
           'harpoon2',
@@ -42,7 +42,7 @@ return {
         },
         { '%=', separator = '' }, -- make the indicator center
       },
-      lualine_y = { 'encoding', 'fileformat', 'filetype' },
+      lualine_y = { 'encoding', 'filetype' },
       lualine_z = { 'location' },
     },
     extensions = { 'fugitive', 'lazy', 'mason', 'nvim-dap-ui', 'oil', 'trouble' },
