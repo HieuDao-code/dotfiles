@@ -6,5 +6,7 @@ if ask "$os: install or upgrade zsh?" N; then
     elif [[ "$os" == "ubuntu" ]]; then
         sudo apt install -y zsh
     fi
+ 
+    # Install oh my ash and plugins
 
 fi
