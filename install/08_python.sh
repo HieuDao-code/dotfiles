@@ -12,6 +12,8 @@ if ask "$os: Install python tooling?" Y; then
 
     echo "$os: Add shell completion for uv and uvx..."
     echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
-    echo 'eval "$(uvx --generate-shell-completion zsh)"' >> ~/.zshrc 
+    echo 'eval "$(uvx --generate-shell-completion zsh)"' >> ~/.zshrc
+
+    echo "$os: Install ruff, commitizen, pre-commit, tox..."
     
 fi
