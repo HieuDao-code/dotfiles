@@ -7,6 +7,6 @@ if ask "$os: install or upgrade zsh?" N; then
         sudo apt install -y zsh
     fi
  
-    # Install oh my ash and plugins
+    # Install oh my zsh and plugins
 
 fi
