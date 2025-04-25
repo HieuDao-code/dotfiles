@@ -46,9 +46,9 @@ I use the plugin manager [**lazy.nvim**](https://github.com/folke/lazy.nvim) to 
 | [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)                             | Highlight your to-do comments in different styles                                                      | [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)                                                                                                                                                                                                                                                                 | ✔️    |
 | [venv-selector.nvim](https://github.com/linux-cultist/venv-selector.nvim)                     | Browse existing python virtual environments on your computer and select one to activate inside neovim. | [fd](https://github.com/sharkdp/fd), [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim), [nvim-dap](https://github.com/mfussenegger/nvim-dap) [nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python), [debugpy](https://github.com/microsoft/debugpy)                                                 | ✔️    |
 | [vim-sleuth](https://github.com/tpope/vim-sleuth)                                             | Smart indentation style detection                                                                      |                                                                                                                                                                                                                                                                                                                                   | ✔️    |
-| [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim) | Improve viewing markdown files |  | ❌ |
-| [undotree](https://github.com/mbbill/undotree) | Visualize undo history |  | ❌ |
-| [trouble.nvim](https://github.com/folke/trouble.nvim?tab=readme-ov-file) | Pretty list for diagnosis and more |  | ❌ |
+| [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim)          | Improve viewing markdown files                                                                         |                                                                                                                                                                                                                                                                                                                                   | ❌    |
+| [undotree](https://github.com/mbbill/undotree)                                                | Visualize undo history                                                                                 |                                                                                                                                                                                                                                                                                                                                   | ❌    |
+| [trouble.nvim](https://github.com/folke/trouble.nvim?tab=readme-ov-file)                      | Pretty list for diagnosis and more                                                                     |                                                                                                                                                                                                                                                                                                                                   | ❌    |
 
 ### Working with files and navigating between files
 
@@ -69,13 +69,13 @@ I use the plugin manager [**lazy.nvim**](https://github.com/folke/lazy.nvim) to 
 
 ### Miscellaneous
 
-| Name                                                                                             | Purpose                                                          | Dependencies | Notes |
-| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- | ------------ | ----- |
-| [fidget.nvim](https://github.com/j-hui/fidget.nvim)                                              | Extensible UI for Neovim notifications and LSP progress messages |              | ✔️    |
-| [mini.icons](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-icons.md)           | File and folder icons                                            |              | ✔️    |
-| [lua line.nvim](https://github.com/nvim-lualine/lualine.nvim) | Fast and easy to configure Neovim statusline                               |              | ❌    |
-| [obsidian.nvim](https://github.com/obsidian-nvim/obsidian.nvim)                                  | Plugin for Obsidian                                              |              | ❌    |
-| [which-key.nvim](https://github.com/folke/which-key.nvim)                                        | Show available keybindings in a popup as you type                |              | ✔️    |
+| Name                                                                                   | Purpose                                                          | Dependencies | Notes |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------ | ----- |
+| [fidget.nvim](https://github.com/j-hui/fidget.nvim)                                    | Extensible UI for Neovim notifications and LSP progress messages |              | ✔️    |
+| [lua line.nvim](https://github.com/nvim-lualine/lualine.nvim)                          | Fast and easy to configure Neovim statusline                     |              | ✔️    |
+| [mini.icons](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-icons.md) | File and folder icons                                            |              | ✔️    |
+| [obsidian.nvim](https://github.com/obsidian-nvim/obsidian.nvim)                        | Plugin for Obsidian                                              |              | ❌    |
+| [which-key.nvim](https://github.com/folke/which-key.nvim)                              | Show available keybindings in a popup as you type                |              | ✔️    |
 
 ## Language Server Protocol, Debug Adapter Protocol, Linter and Formatter
 

@@ -1,5 +1,42 @@
 #!/usr/bin/env bash
 
+ask() {
+    # http://djm.me/ask
+    local prompt default REPLY
+
+    while true; do
+
+        if [ "${2:-}" = "Y" ]; then
+            prompt="Y/n"
+            default=Y
+        elif [ "${2:-}" = "N" ]; then
+            prompt="y/N"
+            default=N
+        else
+            prompt="y/n"
+            default=
+        fi
+
+        # Ask the question (not using "read -p" as it uses stderr not stdout)
+        printf "$1 [$prompt] "
+
+        # Read the answer (use /dev/tty in case stdin is redirected from somewhere else)
+        read REPLY </dev/tty
+
+        # Default?
+        if [ -z "$REPLY" ]; then
+            REPLY=$default
+        fi
+
+        # Check if the reply is valid
+        case "$REPLY" in
+            Y*|y*) return 0 ;;
+            N*|n*) return 1 ;;
+        esac
+
+    done
+}
+
 # Echo's the operating system, simplified to:
 # - osx
 # - ubuntu
@@ -20,7 +57,7 @@ get_os() {
 # Get the operating system, output it. The script will terminate if the OS
 # cannot be categorically identified.
 os=$(get_os)
-echo "os identified as: $os
+echo "os identified as: $os"
 
 # Run each of the setup files.
 for file in ./install/*; do
@@ -38,14 +75,17 @@ done
 echo "$os: Installing Stow..."
 if [[ "$os" == "osx" ]]; then
     brew install stow
-if [[ "$os" == "ubuntu" ]]; then
+elif [[ "$os" == "ubuntu" ]]; then
     sudo apt install -y stow
+fi
 
 # Symlink with Stow
 stow --delete config
-stow --target=$HOME/.config config
+stow --target=$HOME/.config config/*
 stow bin
 
 # Make sketchybar plugins executable
 if [[ "$os" == "osx" ]]; then
     chmod +x $HOME/.config/sketchybar/plugins/*
+fi
+

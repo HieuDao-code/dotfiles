@@ -1,5 +1,5 @@
 # Install window manager
-if ask "$os: Install/Update aerospace and skethybar?" Y; then
+if ask "$os: Install/Update window manager?" Y; then
     if [[ "$os" == "osx" ]]; then
         echo "$os: Installing Aerospace..."
         brew install --cask nikitabobko/tap/aerospace
