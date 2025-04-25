@@ -6,4 +6,8 @@ if ask "$os: install or upgrade zsh?" N; then
     elif [[ "$os" == "ubuntu" ]]; then
         sudo apt install -y zsh
     fi
+
+        echo "$os: Add shell completion for zsh..."
+    echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
+
 fi
