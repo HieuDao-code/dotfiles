@@ -7,7 +7,6 @@ if ask "$os: Install python tooling?" Y; then
         sudo apt install -y pipx
         pipx ensurepath
         pipx install uv
-
     fi
 
     echo "$os: Add shell completion for uv and uvx..."
@@ -19,5 +18,4 @@ if ask "$os: Install python tooling?" Y; then
     uv tool install commitizen
     uv tool install pre-commit
     uv tool install tox
-
 fi
