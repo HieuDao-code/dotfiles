@@ -8,6 +8,7 @@ if ask "$os: install or upgrade zsh?" N; then
     fi
 
     echo "$os: Add shell completion for zsh..."
-    echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
+    echo 'autoload -Uz compinit' >> ~/.zshrc
+    echo 'compinit' >> ~/.zshrc
 
 fi
