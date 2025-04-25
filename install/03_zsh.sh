@@ -7,7 +7,7 @@ if ask "$os: install or upgrade zsh?" N; then
         sudo apt install -y zsh
     fi
 
-        echo "$os: Add shell completion for zsh..."
+    echo "$os: Add shell completion for zsh..."
     echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
 
 fi
