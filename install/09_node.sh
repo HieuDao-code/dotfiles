@@ -1,12 +1,7 @@
 # If NVM (Node version manager) is not installed, install it.
-echo "$os: Checking for NVM..."
-if [ ! -x "$(command -v nvm)" ] ; then
-    if ask "$os: NVM is not installed. Install it?" N; then
-        echo "$os: Installing NVM..."
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
-    fi
-else
-    echo "$os: NVM is installed..."
+if ask "$os: Install node version manager?" N; then
+    echo "$os: Installing NVM..."
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 fi
 
 # Install the current node lts.

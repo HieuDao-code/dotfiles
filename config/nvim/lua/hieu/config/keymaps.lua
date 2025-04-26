@@ -62,4 +62,4 @@ function ToggleTheme()
   vim.cmd.colorscheme(current_theme)
 end
 
-vim.api.nvim_set_keymap('n', '<leader>tt', ':lua ToggleTheme()<CR>', { desc = 'Toggle light and dark mode', noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>tc', ':lua ToggleTheme()<CR>', { desc = 'Toggle light and dark mode', noremap = true, silent = true })
