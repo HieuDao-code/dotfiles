@@ -1,12 +1,10 @@
 # Ensure tmux is up to date.
-echo "$os: Updating tmux..."
-if ask "$os: Install/Update tmux?" Y; then
-    if [[ "$os" == "osx" ]]; then
-        brew install tmux
+echo "$os: Installing tmux..."
+if [[ "$os" == "osx" ]]; then
+    brew install tmux
 
-    elif [[ "$os" == "ubuntu" ]]; then
-        sudo apt install -y tmux
-    fi
+elif [[ "$os" == "ubuntu" ]]; then
+    sudo apt install -y tmux
 fi
 
 # Install the Tmux Plugin Manager.

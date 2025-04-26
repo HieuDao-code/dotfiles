@@ -1,12 +1,10 @@
 # Install Neovim
-echo "$os: Updating Neovim..."
-if ask "$os: Install/Update Neovim?" Y; then
-    if [[ "$os" == "osx" ]]; then
-        brew install neovim
-        brew install ripgrep fd
+echo "$os: Installing Neovim..."
+if [[ "$os" == "osx" ]]; then
+    brew install neovim
+    brew install ripgrep fd
 
-    elif [[ "$os" == "ubuntu" ]]; then
-        sudo snap install nvim --classic
-        sudo apt install -y make gcc ripgrep unzip xclip, fd-find
-    fi
+elif [[ "$os" == "ubuntu" ]]; then
+    sudo snap install nvim --classic
+    sudo apt install -y make gcc ripgrep unzip xclip fd-find
 fi

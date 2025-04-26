@@ -37,7 +37,7 @@ ask() {
 }
 
 # Echo's the operating system, simplified to:
-# - osx
+# - osx (MacOS)
 # - ubuntu
 get_os() {
     # Identify the operating system.
@@ -66,7 +66,7 @@ for file in ./install/*; do
 
     # Ask the user if they want to setup the feature, then setup or skip.
     feature=$(basename "$file")
-    if ! ask "$os: setup feature '$feature'?" "N"; then continue; fi
+    if ! ask "$os: Setup feature '$feature'?" "N"; then continue; fi
     source $file
 done
 
@@ -79,7 +79,9 @@ elif [[ "$os" == "ubuntu" ]]; then
 fi
 
 # Symlink with Stow
+echo "$os: Symlink all config files..."
 stow --delete config
+stow --delete bin zsh
 stow --target=$HOME/.config config
 stow bin zsh
 

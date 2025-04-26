@@ -1,12 +1,14 @@
 # Install and configure zsh
-if ask "$os: install or upgrade zsh?" N; then
-    if [[ "$os" == "osx" ]]; then
-        brew install zsh
+echo "$os: Installing zsh..."
+if [[ "$os" == "osx" ]]; then
+    brew install zsh
 
-    elif [[ "$os" == "ubuntu" ]]; then
-        sudo apt install -y zsh
-    fi
- 
-    # Install oh my zsh and plugins
-
+elif [[ "$os" == "ubuntu" ]]; then
+    sudo apt install -y zsh
 fi
+
+echo "$os: Make zsh the default shell..."
+chsh -s $(which zsh)
+
+# Install oh my zsh and plugins
+
