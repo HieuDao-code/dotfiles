@@ -1,9 +1,11 @@
-# Install NVM (Node version manager)
+# Install fnm (fast node manager)
 echo "$os: Installing node version manager..."
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+if [[ "$os" == "osx" ]]; then
+    brew install fnm
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+elif [[ "$os" == "ubuntu" ]]; then
+    curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell
+fi
 
 echo "$os: Installing latest node lts..."
-nvm install --lts --default
+fnm install --lts

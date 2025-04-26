@@ -104,9 +104,18 @@ plugins=(git)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 autoload -Uz compinit && compinit
+
+# uv
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# fnm (fast node mananger)
+OS="$(uname -s)"
+if [ "$OS" = "Darwin" ]; then
+  eval "$(fnm env --use-on-cd --shell zsh)"
+else # linux
+  FNM_PATH="$HOME/.local/share/fnm"
+  if [ -d "$FNM_PATH" ]; then
+    export PATH="$HOME/.local/share/fnm:$PATH"
+  fi
+fi
