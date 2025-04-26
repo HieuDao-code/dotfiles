@@ -1,6 +1,6 @@
 # Python tooling
 
-This is a list of python tools which get installed.
+This is a list of python tools which get installed. We use [uv](https://github.com/astral-sh/uv) to manage our python tools in an isolated and persistent environment.
 
 Install uv via the standalone installer:
 
