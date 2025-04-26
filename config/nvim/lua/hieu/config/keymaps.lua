@@ -48,7 +48,7 @@ local light_theme = 'catppuccin-latte'
 local dark_theme = 'kanagawa-wave'
 
 -- TODO: get system mode
-local current_theme = dark_theme
+local current_theme = light_theme
 vim.cmd.colorscheme(current_theme)
 
 function ToggleTheme()
@@ -61,3 +61,5 @@ function ToggleTheme()
   end
   vim.cmd.colorscheme(current_theme)
 end
+
+vim.api.nvim_set_keymap('n', '<leader>tt', ':lua ToggleTheme()<CR>', { desc = 'Toggle light and dark mode', noremap = true, silent = true })

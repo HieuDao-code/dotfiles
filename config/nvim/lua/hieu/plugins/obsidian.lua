@@ -86,3 +86,4 @@ return {
   --   },
   -- },
 }
+-- ui = { enable = false }, disable to be compatible with rendermarkdown

@@ -1,21 +1,18 @@
 # Install basic python tooling
 if ask "$os: Install python tooling?" Y; then
-    if [[ "$os" == "osx" ]]; then
-        brew install uv
+    echo "$os: Installing uv..."
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    
+    echo "$os: Install python tooling..."
 
-    elif [[ "$os" == "ubuntu" ]]; then
-        sudo apt install -y pipx
-        pipx ensurepath
-        pipx install uv
-    fi
-
-    echo "$os: Add shell completion for uv and uvx..."
-    echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
-    echo 'eval "$(uvx --generate-shell-completion zsh)"' >> ~/.zshrc
-
-    echo "$os: Install ruff, commitizen, pre-commit, tox..."
-    uv tool install ruff
+    echo "$os: Install commitizen..."
     uv tool install commitizen
+    echo "$os: Install mkdocs-material..."
+    uv tool install mkdocs --with mkdocs-material
+    echo "$os: Install pre-commit..."
     uv tool install pre-commit
+    echo "$os: Install ruff..."
+    uv tool install ruff
+    echo "$os: Install tox..."
     uv tool install tox
 fi

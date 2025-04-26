@@ -1,6 +1,8 @@
 -- Install all LSP, DAP, Linter and Formatter
 return {
-  { 'williamboman/mason.nvim', opts = {} },
+  { 'williamboman/mason.nvim', opts = {}, keys = {
+    { '<leader>M', '<cmd>Mason<CR>', desc = '[M]ason Menu' },
+  } },
   {
     -- Ensure the servers and tools above are installed
     'WhoIsSethDaniel/mason-tool-installer.nvim',

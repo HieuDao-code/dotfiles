@@ -1,8 +1,6 @@
 # Window manager
 
-[i3](https://github.com/i3/i3) is a tiling window manager.
-
-For MacOS, use the i3-inspired alternative [Aerospace](https://github.com/nikitabobko/AeroSpace).
+[i3](https://github.com/i3/i3) is a tiling window manager. For MacOS, use the i3-inspired alternative [Aerospace](https://github.com/nikitabobko/AeroSpace).
 
 To install i3 use the following commands:
 
@@ -12,22 +10,12 @@ sudo apt install ./keyring.deb
 echo "deb [signed-by=/usr/share/keyrings/sur5r-keyring.gpg] http://debian.sur5r.net/i3/ $(grep '^VERSION_CODENAME=' /etc/os-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
 sudo apt update
 sudo apt install i3
-
-# Create symlink
-mkdir $HOME/.config/i3
-ln -s $HOME/.dotfiles/config/i3/config $HOME/.config/i3/config
-mkdir $HOME/.config/i3status
-ln -s $HOME/.dotfiles/config/i3status/config $HOME/.config/i3status/config
 ```
 
 To install aerospace for MacOS use the following commands:
 
 ```sh
 brew install --cask nikitabobko/tap/aerospace
-
-# Create symlink
-mkdir $HOME/.config/aerospace
-ln -s $HOME/.dotfiles/config/aerospace/aerospace.toml $HOME/.config/aerospace/aerospace.toml
 
 # Move windows by holding ctrl + cmd and dragging any part of the window (not necessarily the window title)
 defaults write -g NSWindowShouldDragOnGesture -bool true
@@ -36,4 +24,19 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 ```
 
-Make sure to use [Sketchybar](sketchybar.md).
+## Sketchybar
+
+[Sketchybar](https://github.com/FelixKratz/SketchyBar) is a highly customizable macOS status bar replacement.
+
+[Install instructions](https://felixkratz.github.io/SketchyBar/setup)
+
+```sh
+brew tap FelixKratz/formulae
+brew install sketchybar
+```
+
+When you use/create additional plugins, make sure that they are made executable via
+
+```sh
+chmod +x $HOME/.config/sketchybar/plugins/*
+```

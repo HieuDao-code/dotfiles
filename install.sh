@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 ask() {
-    # http://djm.me/ask
     local prompt default REPLY
 
     while true; do
@@ -81,8 +80,8 @@ fi
 
 # Symlink with Stow
 stow --delete config
-stow --target=$HOME/.config config/*
-stow bin
+stow --target=$HOME/.config config
+stow bin zsh
 
 # Make sketchybar plugins executable
 if [[ "$os" == "osx" ]]; then
