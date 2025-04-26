@@ -69,7 +69,6 @@ return {
     vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
     vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
     vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
-    vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
     vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
     vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
     vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = '[ ] Find existing buffers' })
@@ -98,7 +97,7 @@ return {
     end, { desc = '[S]earch [N]eovim files' })
 
     -- Shortcut for searching your dotfiles
-    vim.keymap.set('n', '<leader>sc', function()
+    vim.keymap.set('n', '<leader>sd', function()
       require('telescope.builtin').find_files {
         prompt_title = '~ dotfiles ~',
         cwd = vim.fn.expand '~/.dotfiles',
@@ -107,8 +106,7 @@ return {
       }
     end, { desc = '[S]earch [D]otfiles' })
 
-    -- Open Lazy and Mason
+    -- Open Lazy
     vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { desc = '[L]azy Menu' })
-    vim.keymap.set('n', '<leader>m', ':Mason<CR>', { desc = '[M]ason Menu' })
   end,
 }

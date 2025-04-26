@@ -6,16 +6,21 @@
 
 [Install instructions](https://github.com/tmux/tmux/wiki/Installing)
 
+Install tmux on Ubuntu:
+
 ```sh
-# Install tmux
 sudo apt install tmux
+```
 
-# Create symlinks
-mkdir $HOME/.config/tmux
-ln -s $HOME/.dotfiles/config/tmux/tmux.conf $HOME/.config/tmux/tmux.conf
-ln -s $HOME/.dotfiles/config/tmux/themes/ $HOME/.config/tmux/
+Install tmux on MacOS:
 
-# Setup the tmux plugin manager if it is not already installed.
+```sh
+brew install tmux
+```
+
+Setup the tmux plugin manager if it is not already installed:
+
+```sh
 rm -rf ~/.tmux/plugins/tpm  || true
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
@@ -34,9 +39,10 @@ The plugin manager is [tpm](https://github.com/tmux-plugins/tpm).
 
 | Name                                                                    | Purpose                                               | Dependencies                              | Notes |
 | ----------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------- | ----- |
-| [tmux-loggign](https://github.com/tmux-plugins/tmux-logging)            | Looging of all outputs in the current pane            |                                           | ✔️    |
+| [tmux-logging](https://github.com/tmux-plugins/tmux-logging)            | Looging of all outputs in the current pane            |                                           | ✔️    |
 | [tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control)  | Controlling and navigating panes                      |                                           | ✔️    |
 | [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)          | A set of sensible default options                     |                                           | ✔️    |
 | [tmux-tokyo-night](https://github.com/fabioluciano/tmux-tokyo-night)    | Tokyo night tmux theme                                |                                           | ✔️    |
 | [tmux-yank](https://github.com/tmux-plugins/tmux-yank)                  | Copy to the system clipboard                          | [xclip](https://github.com/astrand/xclip) | ✔️    |
 | [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Seamless navigation between vim panes and tmux splits |                                           | ✔️    |
+| [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)        | Persists tmux environment across system restarts      |                                           | ✔️    |

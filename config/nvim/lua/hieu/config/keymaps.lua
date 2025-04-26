@@ -48,14 +48,16 @@ local light_theme = 'catppuccin-latte'
 local dark_theme = 'kanagawa-wave'
 
 -- TODO: get system mode
-local current_theme = 'catppuccin-latte'
+local current_theme = light_theme
 vim.cmd.colorscheme(current_theme)
 
 function ToggleTheme()
   if current_theme == light_theme then
     current_theme = dark_theme
+    vim.o.background = 'dark'
   else
     current_theme = light_theme
+    vim.o.background = 'light'
   end
   vim.cmd.colorscheme(current_theme)
 end

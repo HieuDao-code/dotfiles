@@ -37,8 +37,9 @@ markdown_extensions:
 nav:
   - README.md
   - Tools:
-      - neovim.md
-      - tmux.md
       - alacritty.md
-      - i3.md
+      - tmux.md
+      - window_manager.md
+      - neovim.md
+      - python.md
   - key_binding.md

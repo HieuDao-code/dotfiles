@@ -53,6 +53,7 @@ return {
       { '<leader>w', group = '[W]orkspace' },
       { '<leader>t', group = '[T]est' },
       { '<leader>g', group = '[G]it', mode = { 'n', 'v' } },
+      { '<leader>x', group = 'Trouble' },
     },
   },
 }
