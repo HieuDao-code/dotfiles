@@ -1,7 +1,8 @@
 # Setup
 
 ## Installation
-- Install [git](https://git-scm.com/downloads). 
+
+- Install [git](https://git-scm.com/downloads).
 - Clone this git repository by running the command below (Linux and Mac):
 
 ```sh

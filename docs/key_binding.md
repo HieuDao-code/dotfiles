@@ -167,6 +167,10 @@ Move selection in visual mode or current line
 - `<leader>z` toggle zen mode
 - `<leader>Z` toggle zoom
 
+#### <abbr title="render-markdown.nvim">Markdown</abbr>
+
+- `<leader>m` toggle markdown rendering
+
 #### <abbr title="todo-comments.nvim">To-do comments</abbr>
 
 - `]t` move to next to-do comments
