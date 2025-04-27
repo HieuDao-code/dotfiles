@@ -129,16 +129,19 @@ else # linux
   fi
 fi
 
+# zoxide, smarter cd command
+eval "$(zoxide init zsh)"
+
 # zsh plugins
-if [ "$OS" = "Darwin" ]; then
-
-  source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-  source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-else # linux
-
-  source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-  source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # syntax highlighting
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # auto suggestions
+fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath) # additional completions
+source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh # history search
+# keybinds for history search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
