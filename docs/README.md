@@ -5,7 +5,7 @@
 - Clone this git repository by running the command below (Linux and Mac):
 
 ```sh
-git clone --recurse-submodules https://github.com/HieuDao-code/kickstart.nvim.git $HOME/.dotfiles
+git clone --recurse-submodules git@github.com:HieuDao-code/dotfiles.git $HOME/.dotfiles
 ```
 
 Execute the install script:
