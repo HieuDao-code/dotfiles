@@ -10,5 +10,3 @@ fi
 echo "$os: Make zsh the default shell..."
 chsh -s $(which zsh)
 
-# Install oh my zsh and plugins
-

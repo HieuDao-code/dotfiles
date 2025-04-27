@@ -16,3 +16,6 @@ startup_mode = "Maximized"
 [terminal]
 
 shell = { program = "/bin/zsh", args = [] }
+
+[font]
+normal = { family = "MesloLGS NF" }

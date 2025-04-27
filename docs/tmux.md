@@ -34,7 +34,7 @@ tmux source $HOME/.config/.tmux.conf
 ```
 
 ## Plugins
-                         
+
 The plugin manager is [tpm](https://github.com/tmux-plugins/tpm).
 
 | Name                                                                    | Purpose                                               | Dependencies                              | Notes |
