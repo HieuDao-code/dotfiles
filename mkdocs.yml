@@ -38,6 +38,7 @@ nav:
   - README.md
   - Tools:
       - alacritty.md
+      - zsh.md
       - tmux.md
       - window_manager.md
       - neovim.md

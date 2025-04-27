@@ -5,7 +5,7 @@
 - Clone this git repository by running the command below (Linux and Mac):
 
 ```sh
-git clone --recurse-submodules git@github.com:HieuDao-code/dotfiles.git $HOME/.dotfiles
+git clone git@github.com:HieuDao-code/dotfiles.git $HOME/.dotfiles
 ```
 
 Execute the install script:

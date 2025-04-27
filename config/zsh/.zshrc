@@ -127,7 +127,9 @@ else # linux
   if [ -d "$FNM_PATH" ]; then
     export PATH="$HOME/.local/share/fnm:$PATH"
   fi
+  eval "$(fnm env --shell zsh)"
 fi
+eval "$(fnm completions --shell zsh)"
 
 # zoxide, smarter cd comman d
 eval "$(zoxide init zsh)"
@@ -144,7 +146,11 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+if [ "$OS" = "Darwin" ]; then
+  source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+else
+  source ~/powerlevel10k/powerlevel10k.zsh-theme
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

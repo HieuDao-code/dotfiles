@@ -14,7 +14,13 @@ chsh -s $(which zsh)
 echo "$os: Installing zoxide..."
 if [[ "$os" == "osx" ]]; then
     brew install zoxide
-
 elif [[ "$os" == "ubuntu" ]]; then
     curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+fi
+
+echo "$os: Installing powerlevel10k..."
+if [[ "$os" == "osx" ]]; then
+    brew install powerlevel10k
+elif [[ "$os" == "ubuntu" ]]; then
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 fi
