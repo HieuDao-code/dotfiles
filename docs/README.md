@@ -1,11 +1,11 @@
 # Setup
 
 ## Installation
-
+- Install [git](https://git-scm.com/downloads). 
 - Clone this git repository by running the command below (Linux and Mac):
 
 ```sh
-git clone https://github.com/HieuDao-code/kickstart.nvim.git $HOME/.dotfiles
+git clone --recurse-submodules https://github.com/HieuDao-code/kickstart.nvim.git $HOME/.dotfiles
 ```
 
 Execute the install script:
