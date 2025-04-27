@@ -78,6 +78,7 @@ I use the plugin manager [**lazy.nvim**](https://github.com/folke/lazy.nvim) to 
 | [lua line.nvim](https://github.com/nvim-lualine/lualine.nvim)                          | Fast and easy to configure Neovim statusline                     |              | ✔️    |
 | [mini.icons](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-icons.md) | File and folder icons                                            |              | ✔️    |
 | [obsidian.nvim](https://github.com/obsidian-nvim/obsidian.nvim)                        | Plugin for Obsidian                                              |              | ❌    |
+| [vim-obsession](https://github.com/tpope/vim-obsession)                              |Continuously updated session files |              | ✔️    |
 | [which-key.nvim](https://github.com/folke/which-key.nvim)                              | Show available keybindings in a popup as you type                |              | ✔️    |
 
 ## Language Server Protocol, Debug Adapter Protocol, Linter and Formatter

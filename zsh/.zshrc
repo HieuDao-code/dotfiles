@@ -103,7 +103,9 @@ plugins=(git)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-autoload -Uz compinit && compinit
+# Shell Autocompletion after these commands
+autoload -Uz compinit
+compinit
 
 # uv
 eval "$(uv generate-shell-completion zsh)"

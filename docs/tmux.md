@@ -41,8 +41,8 @@ The plugin manager is [tpm](https://github.com/tmux-plugins/tpm).
 | ----------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------- | ----- |
 | [tmux-logging](https://github.com/tmux-plugins/tmux-logging)            | Looging of all outputs in the current pane            |                                           | ✔️    |
 | [tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control)  | Controlling and navigating panes                      |                                           | ✔️    |
-| [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)          | A set of sensible default options                     |                                           | ✔️    |
-| [tmux-tokyo-night](https://github.com/fabioluciano/tmux-tokyo-night)    | Tokyo night tmux theme                                |                                           | ✔️    |
-| [tmux-yank](https://github.com/tmux-plugins/tmux-yank)                  | Copy to the system clipboard                          | [xclip](https://github.com/astrand/xclip) | ✔️    |
-| [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Seamless navigation between vim panes and tmux splits |                                           | ✔️    |
 | [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)        | Persists tmux environment across system restarts      |                                           | ✔️    |
+| [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)          | A set of sensible default options                     |                                           | ✔️    |
+| [tmux-yank](https://github.com/tmux-plugins/tmux-yank)                  | Copy to the system clipboard                          | [xclip](https://github.com/astrand/xclip) | ✔️    |
+| [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum)                  |Continuous saving of tmux environment. Automatic restore when tmux is started. Automatic tmux start when computer is turned on.                          |  [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)        | ✔️    |
+| [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Seamless navigation between vim panes and tmux splits |                                           | ✔️    |
