@@ -129,7 +129,7 @@ else # linux
   fi
 fi
 
-# zoxide, smarter cd command
+# zoxide, smarter cd comman d
 eval "$(zoxide init zsh)"
 
 # zsh plugins
