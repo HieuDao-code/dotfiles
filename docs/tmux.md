@@ -34,7 +34,7 @@ tmux source $HOME/.config/.tmux.conf
 ```
 
 ## Plugins
-
+                         
 The plugin manager is [tpm](https://github.com/tmux-plugins/tpm).
 
 | Name                                                                    | Purpose                                               | Dependencies                              | Notes |
@@ -46,3 +46,4 @@ The plugin manager is [tpm](https://github.com/tmux-plugins/tpm).
 | [tmux-yank](https://github.com/tmux-plugins/tmux-yank)                  | Copy to the system clipboard                          | [xclip](https://github.com/astrand/xclip) | ✔️    |
 | [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum)                  |Continuous saving of tmux environment. Automatic restore when tmux is started. Automatic tmux start when computer is turned on.                          |  [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)        | ✔️    |
 | [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | Seamless navigation between vim panes and tmux splits |                                           | ✔️    |
+| [tmux-gruvbox](https://github.com/egel/tmux-gruvbox)| Gruvbox color scheme for Tmux |                                           | ✔️    |
