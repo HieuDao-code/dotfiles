@@ -10,7 +10,8 @@ fi
 # Install the Tmux Plugin Manager.
 if ask "$os: Install/Update tmux plugin manager? Warning, this will overwrite existing plugins?" Y; then
     # Setup the tmux plugin manager if it is not already installed.
-    rm -rf ~/.tmux/plugins/tpm  || true
+    rm -rf $HOME/.tmux/plugins/tpm  || true
+    rm -rf $HOME/.config/tmux/plugins/tpm || true
     git clone https://github.com/tmux-plugins/tpm $HOME/.config/tmux/plugins/tpm
 
     # Install tmux plugins.

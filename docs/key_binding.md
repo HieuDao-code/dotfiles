@@ -241,6 +241,7 @@ Move selection in visual mode or current line
 - `<prefix>)` move to next session
 - `<prefix>(` move to previous session
 - `<prefix><C-z>` suspend session
+- `<prefix>s` select a new session interactively
 - `<prefix>f` tmux sessionizer (`<leader>f` if not in tmux)
 
 ##### Panes management

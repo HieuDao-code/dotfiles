@@ -21,8 +21,9 @@ brew install tmux
 Setup the tmux plugin manager if it is not already installed:
 
 ```sh
-rm -rf ~/.tmux/plugins/tpm  || true
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+rm -rf $HOME/.tmux/plugins/tpm  || true
+rm -rf $HOME/.config/tmux/plugins/tpm || true
+git clone https://github.com/tmux-plugins/tpm $HOME/.config/tmux/plugins/tpm
 ```
 
 Run this while in a tmux session
@@ -30,7 +31,7 @@ Run this while in a tmux session
 ```sh
 tmux source $HOME/.config/.tmux.conf
 # Install tmux plugins.
-~/.tmux/plugins/tpm/scripts/install_plugins.sh
+$HOME/.config/tmux/plugins/tpm/scripts/install_plugins.sh
 ```
 
 ## Plugins
