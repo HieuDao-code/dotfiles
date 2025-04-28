@@ -101,3 +101,4 @@ alias ls='ls --color'
 
 # Tmux
 bindkey -s ^f "tmux-sessionizer\n"
+
