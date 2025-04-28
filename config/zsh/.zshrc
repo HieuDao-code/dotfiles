@@ -15,7 +15,7 @@ fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath) # additional zsh completions
 source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh # history search
 source $ZDOTDIR/plugins/fzf-tab/fzf-tab.plugin.zsh # fzf-tab
 
-## powerlevel10k
+## Powerlevel10k
 if [ "$OS" = "Darwin" ]; then
   source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 else
@@ -78,11 +78,7 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Completion stlyle
-# disable sort when completing `git checkout`
-zstyle ':completion:*:git-checkout:*' sort false
-# set descriptions format to enable group support
-# NOTE: don't use escape sequences (like '%F{red}%d%f') here, fzf-tab will ignore them
-zstyle ':completion:*:descriptions' format '[%d]'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # set list-colors to enable filename colorizing
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
