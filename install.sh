@@ -74,16 +74,23 @@ done
 echo "$os: Installing Stow..."
 if [[ "$os" == "osx" ]]; then
     brew install stow
+    stow --target=$HOME/.config --ignore=i3 --ignore=i3status config
+
 elif [[ "$os" == "ubuntu" ]]; then
     sudo apt install -y stow
+    stow --target=$HOME/.config --ignore=aerospace --ignore=sketchybar config
 fi
 
 # Symlink with Stow
 echo "$os: Symlink all config files..."
-stow --delete --target=$HOME/.config config
 stow --delete bin zsh
-stow --target=$HOME/.config config
 stow bin zsh
+stow --delete --target=$HOME/.config config
+if [[ "$os" == "osx" ]]; then
+    stow --target=$HOME/.config --ignore=i3 --ignore=i3status config
+elif [[ "$os" == "ubuntu" ]]; then
+    stow --target=$HOME/.config --ignore=aerospace --ignore=sketchybar config
+fi
 
 # Make sketchybar plugins executable
 if [[ "$os" == "osx" ]]; then
