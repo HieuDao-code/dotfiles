@@ -12,15 +12,28 @@ local function diff_source()
   end
 end
 
--- Get current venv
+-- Get current venv, check current venv when entering/switching buffer
+vim.api.nvim_create_autocmd('BufEnter', {
+  group = vim.api.nvim_create_augroup('python venv', { clear = true }),
+  callback = function(_)
+    local venv = vim.env.VIRTUAL_ENV
+    if venv ~= nil then
+      local venv_name = vim.fn.fnamemodify(venv, ':h:t')
+      local python_version = vim.fn.system(venv .. '/bin/python --version')
+      if python_version ~= nil and string.find(python_version, 'Python') then
+        local version = python_version:match '(%d+%.%d+%.%d+)'
+        vim.api.nvim_buf_set_var(0, 'venv', ' ' .. version .. ' ' .. venv_name)
+      else -- venv doesn't exist but $VIRTUAL_ENV does, e.g. deleted `.venv` folder
+        vim.api.nvim_buf_set_var(0, 'venv', ' no venv activated')
+      end
+    else
+      vim.api.nvim_buf_set_var(0, 'venv', ' no venv activated')
+    end
+  end,
+})
+
 local function get_venv()
-  local venv = vim.env.VIRTUAL_ENV
-  if venv ~= nil then
-    local venv_name = vim.fn.fnamemodify(venv, ':h:t')
-    return ' env:' .. venv_name
-  else
-    return ' env:no venv activated'
-  end
+  return vim.api.nvim_buf_get_var(0, 'venv')
 end
 
 return {

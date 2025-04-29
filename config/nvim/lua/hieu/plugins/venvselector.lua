@@ -18,7 +18,7 @@ return {
   },
   branch = 'regexp', -- This is the regexp branch, use this for the new version
   keys = {
-    { '<leader>v', '<cmd>VenvSelect<cr>', desc = 'Select another python virtual environment' },
+    { '<leader>v', '<cmd>VenvSelect<cr>', desc = '[V]env select (Python)' },
   },
   opts = {
     options = {
