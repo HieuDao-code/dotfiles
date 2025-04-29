@@ -53,8 +53,7 @@ get_os() {
     fi
 }
 
-# Get the operating system, output it. The script will terminate if the OS
-# cannot be categorically identified.
+# Get the operating system, output it.
 os=$(get_os)
 echo "os identified as: $os"
 
@@ -74,11 +73,9 @@ done
 echo "$os: Installing Stow..."
 if [[ "$os" == "osx" ]]; then
     brew install stow
-    stow --target=$HOME/.config --ignore=i3 --ignore=i3status config
 
 elif [[ "$os" == "ubuntu" ]]; then
     sudo apt install -y stow
-    stow --target=$HOME/.config --ignore=aerospace --ignore=sketchybar config
 fi
 
 # Symlink with Stow

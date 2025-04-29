@@ -32,3 +32,4 @@ elif [[ "$os" == "ubuntu" ]]; then
         echo "$os: 'snap' is installed..."
     fi
 fi
+

@@ -9,3 +9,4 @@ fi
 
 echo "$os: Installing latest node lts..."
 fnm install --lts
+

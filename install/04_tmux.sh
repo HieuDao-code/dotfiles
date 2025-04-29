@@ -17,3 +17,4 @@ if ask "$os: Install/Update tmux plugin manager? Warning, this will overwrite ex
     # Install tmux plugins.
     $HOME/.config/tmux/plugins/tpm/scripts/install_plugins.sh
 fi
+
