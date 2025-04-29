@@ -30,8 +30,10 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
 zinit light Aloxaf/fzf-tab
 
-# Add in snippets
-zinit snippet OMZP::virtualenvwrapper
+# Add custom scripts
+# Automatically activate python venv 
+DISABLE_VENV_CD=0 # Set to 1 to disable
+source $HOME/.config/zsh/custom/venv_auto.zsh
 
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

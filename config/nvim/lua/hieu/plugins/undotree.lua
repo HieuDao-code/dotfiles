@@ -2,5 +2,5 @@
 return {
   'mbbill/undotree',
   opts = {},
-  keys = { { '<leader>U', '<cmd>UndotreeToggle<cr>', desc = '[U]ndotree' } },
+  keys = { { '<leader>u', '<cmd>UndotreeToggle<cr>', desc = '[U]ndotree' } },
 }

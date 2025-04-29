@@ -1,5 +1,6 @@
 -- Statusline
 
+-- Gitdiff via gitsign
 local function diff_source()
   local gitsigns = vim.b.gitsigns_status_dict
   if gitsigns then
@@ -8,6 +9,17 @@ local function diff_source()
       modified = gitsigns.changed,
       removed = gitsigns.removed,
     }
+  end
+end
+
+-- Get current venv
+local function get_venv()
+  local venv = vim.env.VIRTUAL_ENV
+  if venv ~= nil then
+    local venv_name = vim.fn.fnamemodify(venv, ':h:t')
+    return ' env:' .. venv_name
+  else
+    return ' env:no venv activated'
   end
 end
 
@@ -42,7 +54,12 @@ return {
         },
         { '%=', separator = '' }, -- make the indicator center
       },
-      lualine_y = { 'encoding', 'filetype' },
+      lualine_y = { 'encoding', 'filetype', {
+        get_venv,
+        cond = function()
+          return vim.bo.filetype == 'python'
+        end,
+      } },
       lualine_z = { 'location' },
     },
     extensions = { 'lazy', 'mason', 'nvim-dap-ui', 'oil', 'trouble' },

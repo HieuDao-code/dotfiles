@@ -178,7 +178,7 @@ Move selection in visual mode or current line
 
 #### <abbr title="undotree">Undotree</abbr>
 
-- `<leader>U` toggle undotree (use `?` for help)
+- `<leader>u` toggle undotree (use `?` for help)
 - `J` move to the previous undo state
 - `K` move to the next undo state
 

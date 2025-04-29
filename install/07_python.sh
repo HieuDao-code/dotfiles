@@ -14,6 +14,4 @@ echo "$os: Install ruff..."
 uv tool install ruff
 echo "$os: Install tox..."
 uv tool install tox
-echo "$os: Install virtualenvwrapper..."
-uv tool install virtualenvwrapper
 

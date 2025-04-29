@@ -13,7 +13,7 @@ return {
   dependencies = {
     'neovim/nvim-lspconfig',
     'mfussenegger/nvim-dap',
-    'mfussenegger/nvim-dap-python', --optional
+    'mfussenegger/nvim-dap-python', --optional, switch python path for dap when you switch venv
     'nvim-telescope/telescope.nvim',
   },
   branch = 'regexp', -- This is the regexp branch, use this for the new version
@@ -26,8 +26,11 @@ return {
       enable_default_searches = false,
     },
     search = {
-      venvs = {
-        command = "$FD '/bin/python$' $CWD --full-path --color never -HI -a -L -E /proc -E .git/  -E site-packages/ -E cdk.out/ -E .tox/",
+      cwd_search = {
+        command = "$FD '/bin/python$' $CWD --full-path --color never -HI -a -L -E /proc -E .git/ -E site-packages/ -E cdk.out/ -E .tox/",
+      },
+      workspace_search = {
+        command = "$FD '/bin/python$' $WORKSPACE_PATH --full-path --color never -HI -a -L -E /proc -E .git/ -E site-packages/ -E cdk.out/ -E .tox/",
       },
     },
   },

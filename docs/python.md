@@ -25,19 +25,15 @@ uv tool install ruff
 
 # tox
 uv tool install tox
-
-# virtualenvwrapper
-uv tool install virtualenvwrapper
 ```
 
 ## Tools
 
-| Name                                                                     | Description                                                                                                                           |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| [commitizen](https://github.com/commitizen-tools/commitizen)             | Commitizen is release management tool designed for teams                                                                              |
-| [mkdocs-material](https://github.com/squidfunk/mkdocs-material)          | A powerful documentation framework on top of MkDocs                                                                                   |
-| [pre-commit](https://github.com/pre-commit/pre-commit)                   | A framework for managing and maintaining multi-language pre-commit hooks                                                              |
-| [ruff](https://github.com/astral-sh/ruff)                                | An extremely fast Python linter and code formatter                                                                                    |
-| [uv](https://github.com/astral-sh/uv)                                    | An extremely fast Python package and project manager                                                                                  |
-| [tox](https://github.com/tox-dev/tox)                                    | tox is a generic virtual environment management and test command line tool                                                            |
-| [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) | virtualenvwrapper is a set of extensions to Ian Bicking’s virtualenv tool. This is used to automatically change virtual environments. |
+| Name                                                            | Description                                                                |
+| --------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [commitizen](https://github.com/commitizen-tools/commitizen)    | Commitizen is release management tool designed for teams                   |
+| [mkdocs-material](https://github.com/squidfunk/mkdocs-material) | A powerful documentation framework on top of MkDocs                        |
+| [pre-commit](https://github.com/pre-commit/pre-commit)          | A framework for managing and maintaining multi-language pre-commit hooks   |
+| [ruff](https://github.com/astral-sh/ruff)                       | An extremely fast Python linter and code formatter                         |
+| [uv](https://github.com/astral-sh/uv)                           | An extremely fast Python package and project manager                       |
+| [tox](https://github.com/tox-dev/tox)                           | tox is a generic virtual environment management and test command line tool |

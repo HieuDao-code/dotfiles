@@ -80,7 +80,7 @@ fi
 
 # Symlink with Stow
 echo "$os: Symlink all config files..."
-stow --delete config
+stow --delete --target=$HOME/.config config
 stow --delete bin zsh
 stow --target=$HOME/.config config
 stow bin zsh p10k
