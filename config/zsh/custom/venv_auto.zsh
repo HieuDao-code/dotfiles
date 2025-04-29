@@ -1,4 +1,4 @@
-# Auto-activate .venv environments
+# Auto-activate python `.venv` virtual environments
 if [[ ! $DISABLE_VENV_CD -eq 1 ]]; then
   function auto_source_venv {
     if [[ -z "$VENV_AUTO_ACTIVATED" ]]; then

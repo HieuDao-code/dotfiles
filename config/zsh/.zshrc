@@ -56,7 +56,7 @@ else # linux
   if [ -d "$FNM_PATH" ]; then
     export PATH="$HOME/.local/share/fnm:$PATH"
   fi
-  eval "$(fnm env --shell zsh)"
+  eval "$(fnm env --use-on-cd --shell zsh)"
 fi
 eval "$(fnm completions --shell zsh)"
 
