@@ -15,5 +15,5 @@ if [[ "$os" == "osx" ]]; then
 
 elif [[ "$os" == "ubuntu" ]]; then
     echo "$os: Installing i3..."
-    sudo apt install i3
+    sudo apt install -y i3
 fi
