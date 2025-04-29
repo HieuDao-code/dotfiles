@@ -68,6 +68,7 @@ I use the plugin manager [**lazy.nvim**](https://github.com/folke/lazy.nvim) to 
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------ | ----- |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)            | Deep buffer integration for Git                                              |              | ✔️    |
 | [git-worktree.nvim](https://github.com/ThePrimeagen/git-worktree.nvim) | A simple wrapper around git worktree operations, create, switch, and delete. |              | ✔️    |
+| [lazygit](https://github.com/jesseduffield/lazygit)                    | Simple terminal UI for git commands                                          |              | ❌    |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive)                  | Git plugin for Vim                                                           |              | ❌    |
 
 ### Miscellaneous
