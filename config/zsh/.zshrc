@@ -33,10 +33,10 @@ zinit light Aloxaf/fzf-tab
 # Add custom scripts
 # Automatically activate python venv 
 DISABLE_VENV_CD=0 # Set to 1 to disable
-source $HOME/.config/zsh/custom/venv_auto.zsh
+source $ZDOTDIR/custom/venv_auto.zsh
 
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
 
 # Shell Autocompletion after these commands
 autoload -Uz compinit && compinit
