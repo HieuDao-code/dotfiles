@@ -83,7 +83,7 @@ echo "$os: Symlink all config files..."
 stow --delete --target=$HOME/.config config
 stow --delete bin zsh
 stow --target=$HOME/.config config
-stow bin zsh p10k
+stow bin zsh
 
 # Make sketchybar plugins executable
 if [[ "$os" == "osx" ]]; then
