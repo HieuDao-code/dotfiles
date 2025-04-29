@@ -8,25 +8,38 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.local/scripts:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Source zsh plugins
-source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # syntax highlighting
-source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # auto suggestions
-fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath) # additional zsh completions
-source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh # history search
-source $ZDOTDIR/plugins/fzf-tab/fzf-tab.plugin.zsh # fzf-tab
+# Set the directory we want to store zinit and plugins
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-## Powerlevel10k
-if [ "$OS" = "Darwin" ]; then
-  source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
-else
-  source ~/powerlevel10k/powerlevel10k.zsh-theme
+# Download Zinit, if it's not there yet
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
+
+# Source/Load zinit
+source "${ZINIT_HOME}/zinit.zsh"
+
+# Add in Powerlevel10k
+zinit ice depth=1; zinit light romkatv/powerlevel10
+
+# Add in zsh plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-history-substring-search
+zinit light Aloxaf/fzf-tab
+
+# Add in snippets
+zinit snippet OMZP::virtualenvwrapper
 
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Shell Autocompletion after these commands
 autoload -Uz compinit && compinit
+
+zinit cdreplay -q
 
 ## uv
 eval "$(uv generate-shell-completion zsh)"

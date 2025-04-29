@@ -82,13 +82,13 @@ fi
 echo "$os: Symlink all config files..."
 stow --delete config
 stow --delete bin zsh
-stow --target=~/.config config
+stow --target=$HOME/.config config
 stow bin zsh p10k
 
 # Make sketchybar plugins executable
 if [[ "$os" == "osx" ]]; then
-    chmod +x ~/.config/sketchybar/plugins/*
+    chmod +x $HOME/.config/sketchybar/plugins/*
 fi
 
 # Permission for custom scripts
-chmod +x ~/.local/scripts/tmux-sessionizer
+chmod +x $HOME/.local/scripts/tmux-sessionizer
