@@ -12,7 +12,7 @@ local function diff_source()
   end
 end
 
--- Get current venv, check current venv when entering/switching buffer
+-- Get current venv, check current venv when entering buffer
 vim.api.nvim_create_autocmd('BufEnter', {
   group = vim.api.nvim_create_augroup('python venv', { clear = true }),
   callback = function(_)
@@ -51,9 +51,6 @@ return {
     },
   },
   opts = {
-    options = {
-      theme = 'gruvbox',
-    },
     sections = {
       lualine_a = { 'mode' },
       lualine_b = { 'branch', { 'diff', source = diff_source }, 'diagnostics' },
@@ -65,6 +62,7 @@ return {
           active_indicators = { '[1]', '[2]', '[3]', '[4]', '[5]' },
           separator = '',
         },
+        { 'lsp_status', ignore_lsp = { 'harperls' }, separator = '' },
         { '%=', separator = '' }, -- make the indicator center
       },
       lualine_y = { 'encoding', 'filetype', {

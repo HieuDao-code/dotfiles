@@ -1,10 +1,23 @@
+[general]
+
+import = [
+  "~/.config/alacritty/themes/themes/rose_pine_dawn.toml",
+  # "~/.config/alacritty/themes/themes/github_light.toml",
+
+  # "~/.config/alacritty/themes/themes/catppuccin_mocha.toml",
+  # "~/.config/alacritty/themes/themes/rose_pine.toml",
+  # "~/.config/alacritty/themes/themes/oxocarbon.toml",
+  # "~/.config/alacritty/themes/themes/nord.toml",
+  # "~/.config/alacritty/themes/themes/dracula.toml",
+]
+
 [env]
 
 TERM = "xterm-256color"
 
 [window]
 
-opacity = 0.9
+opacity = 0.95
 
 padding.x = 5
 padding.y = 5
@@ -18,4 +31,5 @@ startup_mode = "Maximized"
 shell = { program = "/bin/zsh", args = [] }
 
 [font]
+
 normal = { family = "MesloLGS NF" }
