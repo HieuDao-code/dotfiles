@@ -29,8 +29,8 @@ ask() {
 
         # Check if the reply is valid
         case "$REPLY" in
-            Y*|y*) return 0 ;;
-            N*|n*) return 1 ;;
+        Y* | y*) return 0 ;;
+        N* | n*) return 1 ;;
         esac
 
     done

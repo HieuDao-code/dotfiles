@@ -22,6 +22,7 @@ return {
     },
     formatters_by_ft = {
       -- Conform can also run multiple formatters sequentially
+      bash = { 'shfmt' },
       json = { 'prettier' },
       lua = { 'stylua' },
       markdown = { 'prettier' },
@@ -33,8 +34,10 @@ return {
         -- To organize the imports.
         'ruff_organize_imports',
       },
+      sh = { 'shfmt' },
       toml = { 'taplo' },
       yaml = { 'prettier' },
+      zsh = { 'shfmt' },
     },
   },
 }

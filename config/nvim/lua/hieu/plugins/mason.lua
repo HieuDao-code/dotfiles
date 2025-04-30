@@ -13,6 +13,8 @@ return {
         'ruff', -- Used to lint and format Python code
         'prettier', -- Prettier is an opinionated code formatter for JSON, YAML, Markdown
         'taplo', -- Used to lint and format toml files
+        'shellcheck', -- Used to lint shell
+        'shfmt', -- Used to format shell
       },
     },
   },
@@ -31,6 +33,7 @@ return {
         'yamlls', -- YAML
         'taplo', -- TOML
         'harper_ls', -- English grammar
+        'bashls', -- Bash, Zsh, Sh
       },
     },
   },
