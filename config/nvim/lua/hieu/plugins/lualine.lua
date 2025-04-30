@@ -73,6 +73,6 @@ return {
       } },
       lualine_z = { 'location' },
     },
-    extensions = { 'lazy', 'mason', 'nvim-dap-ui', 'oil', 'trouble' },
+    extensions = { 'fugitive', 'lazy', 'mason', 'nvim-dap-ui', 'oil', 'trouble' },
   },
 }

@@ -31,12 +31,6 @@ vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 -- vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 -- vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
--- NOTE: Some terminals have coliding keymaps or are not able to send distinct keycodes
--- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
--- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
--- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
--- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
-
 -- Eye-friendly scrolling
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
@@ -44,11 +38,17 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 -- Smart Paste without losing clipboard
 vim.keymap.set('x', '<leader>p', [["_dP]])
 
-local light_theme = 'catppuccin-latte'
 local dark_theme = 'kanagawa-wave'
-
--- TODO: get system mode
+-- local light_theme = 'rose-pine-dawn'
+local light_theme = 'catppuccin-latte'
+vim.o.background = 'light'
 local current_theme = light_theme
+if vim.o.background == 'dark' then
+  current_theme = dark_theme
+else
+  current_theme = light_theme
+end
+
 vim.cmd.colorscheme(current_theme)
 
 function ToggleTheme()
