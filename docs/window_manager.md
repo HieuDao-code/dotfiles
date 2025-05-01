@@ -1,15 +1,10 @@
 # Window manager
 
-[i3](https://github.com/i3/i3) is a tiling window manager. For MacOS, use the i3-inspired alternative [Aerospace](https://github.com/nikitabobko/AeroSpace).
-
-To install i3 use the following commands:
+[Sway](https://github.com/swaywm/sway) is a tiling Wayland compositor and a drop-in replacement for the i3 window manager for X11. For MacOS, use the i3-inspired alternative [Aerospace](https://github.com/nikitabobko/AeroSpace).
+To install sway use the following commands:
 
 ```sh
-/usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2025.03.09_all.deb keyring.deb SHA256:2c2601e6053d5c68c2c60bcd088fa9797acec5f285151d46de9c830aaba6173c
-sudo apt install ./keyring.deb
-echo "deb [signed-by=/usr/share/keyrings/sur5r-keyring.gpg] http://debian.sur5r.net/i3/ $(grep '^VERSION_CODENAME=' /etc/os-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
-sudo apt update
-sudo apt install i3
+sudo apt install sway
 ```
 
 To install aerospace for MacOS use the following commands:

@@ -260,11 +260,37 @@ Move selection in visual mode or current line
 - `<prefix>:` access tmux command prompt
 - `<prefix>:setw synchronize-panes on` synchronize panes (to send a command to many hosts)
 
-## <abbr title="i3 (or Aerospace for MacOS)">Window Management</abbr>
+## <abbr title="Sway (or Aerospace for MacOS)">Window Management</abbr>
 
-- `<M-(0-9)>` move to workspace by index number
-- `<M-S-(0-9)>` move container to workspace by index number
-- `<M-LeftMouse>` (`<M-CMD-LeftMouse>` on MacOS) move a container with mouse
+- `Mod` is the `Mod4` `(Super)` key
+
+#### Basic
+
+- `<Mod-Return>` start the terminal
+- `<Mod-S-q>` kill focused window
+- `<Mod-d>` start launcher
+- `<Mod-S-c>` reload configuration file
+- `<Mod-S-e>` exit session (logout)
+
+#### Move window, container and workspace
+
+- `<Mod-hjkl>` move between window (also work with arrow keys)
+- `<Mod-S-hjkl>` move focused c to another workspace (also work with arrow keys)
+- `<Mod-(0-9)>` move to workspace by index number
+- `<Mod-S-(0-9)>` move focused container to workspace by index number
+- `<Mod-LeftMouse>` (`<Mod-CMD-LeftMouse>` on MacOS) move a window with mouse
+- `<Mod-RightMouse>` (`<Mod-CMD-RightMouse>` on MacOS) resize a window with mouse
+
+#### Layout
+
+- `<Mod-b>` split horizontally
+- `<Mod-v>` split vertically
+- `<Mod-f>` toggle the current focus fullscreen
+
+#### Scratchpad
+
+- `<Mod-S-Minus>` move the focused window to scratchpad
+- `<Mod-Minus>` toggle to scratchpad window
 
 ## Git Integration
 

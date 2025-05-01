@@ -14,7 +14,6 @@ if [[ "$os" == "osx" ]]; then
     brew install sketchybar
 
 elif [[ "$os" == "ubuntu" ]]; then
-    echo "$os: Installing i3..."
-    sudo apt install -y i3
+    echo "$os: Installing sway..."
+    sudo apt install -y sway
 fi
-
