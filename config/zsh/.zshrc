@@ -11,6 +11,7 @@ export PATH=$HOME/.local/scripts:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 # Set neovim as default editor
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
+export LANG="en_US.UTF-8"
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"

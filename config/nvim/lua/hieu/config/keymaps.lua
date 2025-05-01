@@ -38,7 +38,8 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 -- Smart Paste without losing clipboard
 vim.keymap.set('x', '<leader>p', [["_dP]])
 
-local dark_theme = 'kanagawa-wave'
+-- local dark_theme = 'kanagawa-wave'
+local dark_theme = 'catppuccin-mocha'
 -- local light_theme = 'rose-pine-dawn'
 local light_theme = 'catppuccin-latte'
 vim.o.background = 'light'
