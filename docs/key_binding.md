@@ -255,11 +255,6 @@ Move selection in visual mode or current line
 - `<prefix><Up/Down>` resize current pane (due north/south)
 - `<prefix><Left/Right>` resize current pane (due west/east)
 
-##### Multiplex
-
-- `<prefix>:` access tmux command prompt
-- `<prefix>:setw synchronize-panes on` synchronize panes (to send a command to many hosts)
-
 ## <abbr title="Sway (or Aerospace for MacOS)">Window Management</abbr>
 
 - `Mod` is the `Mod4` `(Super)` key
