@@ -8,6 +8,12 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.local/scripts:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+# Brew
+OS="$(uname -s)"
+if [ "$OS" = "Darwin" ]; then
+    eval $(/opt/homebrew/bin/brew shellenv)
+fi
+
 # Set neovim as default editor
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
@@ -53,7 +59,6 @@ eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
 ## fnm (fast node mananger)
-OS="$(uname -s)"
 if [ "$OS" = "Darwin" ]; then
   eval "$(fnm env --use-on-cd --shell zsh)"
 else # linux
@@ -119,6 +124,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias ll='ls -la'
+
 # Tmux
 bindkey -s ^f "tmux-sessionizer\n"
 
