@@ -84,7 +84,7 @@ stow --delete bin zsh
 stow bin zsh
 stow --delete --target=$HOME/.config config
 if [[ "$os" == "osx" ]]; then
-    stow --target=$HOME/.config --ignore=sway config
+    stow --target=$HOME/.config --ignore=sway --ignore=i3 --ignore=i3status config
 elif [[ "$os" == "ubuntu" ]]; then
     stow --target=$HOME/.config --ignore=aerospace --ignore=sketchybar config
 fi
