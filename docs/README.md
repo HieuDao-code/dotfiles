@@ -6,7 +6,7 @@
 - Clone this git repository by running the command below (Linux and Mac):
 
 ```sh
-git clone github.com:HieuDao-code/dotfiles.git $HOME/.dotfiles
+git clone https://github.com/HieuDao-code/dotfiles.git $HOME/.dotfiles
 ```
 
 Execute the install script:
