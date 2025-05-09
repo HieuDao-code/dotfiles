@@ -15,5 +15,6 @@ if ask "$os: Install/Update tmux plugin manager? Warning, this will overwrite ex
     git clone https://github.com/tmux-plugins/tpm $HOME/.config/tmux/plugins/tpm
 
     # Install tmux plugins.
+    export TMUX_PLUGIN_MANAGER_PATH=$HOME/.config/tmux/plugins
     $HOME/.config/tmux/plugins/tpm/bin/install_plugins
 fi
