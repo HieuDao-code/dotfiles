@@ -27,6 +27,8 @@ decorations = "Full"
 
 startup_mode = "Maximized"
 
+option_as_alt = "OnlyLeft"
+
 [terminal]
 
 shell = { program = "/bin/zsh", args = [] }
