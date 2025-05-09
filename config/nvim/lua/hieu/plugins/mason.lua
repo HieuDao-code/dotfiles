@@ -9,12 +9,13 @@ return {
     dependencies = { 'mason-org/mason.nvim' },
     opts = {
       ensure_installed = {
-        'stylua', -- Used to format Lua code
-        'ruff', -- Used to lint and format Python code
-        'prettier', -- Prettier is an opinionated code formatter for JSON, YAML, Markdown
-        'taplo', -- Used to lint and format toml files
-        'shellcheck', -- Used to lint shell
-        'shfmt', -- Used to format shell
+        'prettier', -- Formatter for JSON, YAML, Markdown
+        'ruff', -- Python linter and formatter
+        'shellcheck', -- Shell linter
+        'shfmt', -- Shell formatter
+        'stylua', -- Lua formatter
+        'taplo', -- TOML linter and formatter
+        'trivy', -- Security Scanner
       },
     },
   },
@@ -26,14 +27,16 @@ return {
     dependencies = { 'mason-org/mason.nvim', 'neovim/nvim-lspconfig' },
     opts = {
       ensure_installed = {
-        'lua_ls', -- Lua
         'basedpyright', -- Python
-        'ruff', -- Python
-        'marksman', -- Markdown
-        'yamlls', -- YAML
-        'taplo', -- TOML
-        'harper_ls', -- English grammar
         'bashls', -- Bash, Zsh, Sh
+        'harper_ls', -- English grammar
+        'lua_ls', -- Lua
+        'marksman', -- Markdown
+        'ruff', -- Python
+        'taplo', -- TOML
+        'terraformls', -- Terraform
+        'tflint', -- Terraform linter
+        'yamlls', -- YAML
       },
     },
   },
