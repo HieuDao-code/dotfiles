@@ -1,32 +1,31 @@
 -- Use linter for which there is no LSP support
-
--- trivy check for vulnerabilities
-local severity_map = {
-  ['LOW'] = vim.diagnostic.severity.INFO,
-  ['MEDIUM'] = vim.diagnostic.severity.WARN,
-  ['HIGH'] = vim.diagnostic.severity.ERROR,
-  ['CRITICAL'] = vim.diagnostic.severity.ERROR,
-}
-
--- Find code line of package_name for diagnostics
-function find_package_line(package_name, version, filename)
-  local file = io.open(filename, 'r')
-  local lineno = 0
-  for line in file:lines() do
-    lineno = lineno + 1
-    local pattern = '^%s*' .. package_name .. '%s*[=><~!]*%s*' .. version
-    if line:match(pattern) then
-      file:close()
-      return lineno
-    end
-  end
-end
-
 return {
   'mfussenegger/nvim-lint',
   event = { 'BufReadPre', 'BufNewFile' },
   config = function()
     local lint = require 'lint'
+
+    -- trivy check for vulnerabilities
+    local severity_map = {
+      ['LOW'] = vim.diagnostic.severity.INFO,
+      ['MEDIUM'] = vim.diagnostic.severity.WARN,
+      ['HIGH'] = vim.diagnostic.severity.ERROR,
+      ['CRITICAL'] = vim.diagnostic.severity.ERROR,
+    }
+
+    -- Find code line of package_name for diagnostics
+    function find_package_line(package_name, version, filename)
+      local file = io.open(filename, 'r')
+      local lineno = 0
+      for line in file:lines() do
+        lineno = lineno + 1
+        local pattern = '^%s*' .. package_name .. '%s*[=><~!]*%s*' .. version
+        if line:match(pattern) then
+          return lineno
+        end
+      end
+      file:close()
+    end
 
     -- Trivy vulnerabilities scanner
     lint.linters.trivy_vuln = {
@@ -61,7 +60,6 @@ return {
         local decoded = vim.json.decode(output)
 
         for _, result in ipairs(decoded and decoded.Results or {}) do
-          --
           for _, vulnerabtility in ipairs(result.Vulnerabilities or {}) do
             local id = vulnerabtility.VulnerabilityID or '<No ID>'
             local package_name = vulnerabtility.PkgName
@@ -87,10 +85,10 @@ return {
     }
 
     lint.linters_by_ft = {
-      dockerfile = { 'trivy' },
+      dockerfile = { 'trivy', 'trivy_vuln' },
       json = { 'trivy' },
       python = { 'trivy' },
-      requirements = { 'trivy_vuln' },
+      requirements = { 'trivy', 'trivy_vuln' },
       terraform = { 'trivy' },
       ['terraform-vars'] = { 'trivy' },
       tf = { 'trivy' },
