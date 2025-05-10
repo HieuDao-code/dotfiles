@@ -70,12 +70,13 @@ for file in ./install/*; do
 done
 
 # Install Stow
-echo "$os: Installing Stow..."
-if [[ "$os" == "osx" ]]; then
-    brew install stow
-
-elif [[ "$os" == "ubuntu" ]]; then
-    sudo apt install -y stow
+if ask "$os: Setup Stow?" N; then
+    echo "$os: Installing Stow..."
+    if [[ "$os" == "osx" ]]; then
+        brew install stow
+    elif [[ "$os" == "ubuntu" ]]; then
+        sudo apt install -y stow
+    fi
 fi
 
 # Symlink with Stow
