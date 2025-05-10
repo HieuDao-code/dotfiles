@@ -11,7 +11,7 @@ return {
   'linux-cultist/venv-selector.nvim',
   lazy = false,
   dependencies = {
-    'neovim/nvim-lspconfig',
+    -- 'neovim/nvim-lspconfig',
     'mfussenegger/nvim-dap',
     'mfussenegger/nvim-dap-python', --optional, switch python path for dap when you switch venv
     'nvim-telescope/telescope.nvim',

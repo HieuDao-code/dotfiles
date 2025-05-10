@@ -62,7 +62,7 @@ return {
           active_indicators = { '[1]', '[2]', '[3]', '[4]', '[5]' },
           separator = '',
         },
-        { 'lsp_status', ignore_lsp = { 'harper_ls' }, separator = '' },
+        { 'lsp_status', ignore_lsp = { 'harperls' }, separator = '' },
         { '%=', separator = '' }, -- make the indicator center
       },
       lualine_y = { 'encoding', 'filetype', {

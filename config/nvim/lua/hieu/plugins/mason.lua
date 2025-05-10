@@ -9,34 +9,24 @@ return {
     dependencies = { 'mason-org/mason.nvim' },
     opts = {
       ensure_installed = {
-        'prettier', -- Formatter for JSON, YAML, Markdown
-        'ruff', -- Python linter and formatter
+        -- Linter and Formatter
+        'prettier', -- JSON, YAML, Markdown formatter
         'shellcheck', -- Shell linter
         'shfmt', -- Shell formatter
         'stylua', -- Lua formatter
-        'taplo', -- TOML linter and formatter
-        'trivy', -- Security Scanner
-      },
-    },
-  },
+        'trivy', -- Security scanner linter
 
-  -- Install language server
-  -- checkout :help lspconfig-all for default configs
-  {
-    'mason-org/mason-lspconfig.nvim',
-    dependencies = { 'mason-org/mason.nvim', 'neovim/nvim-lspconfig' },
-    opts = {
-      ensure_installed = {
+        -- LSP (need config file in `lsp` folder)
         'basedpyright', -- Python
-        'bashls', -- Bash, Zsh, Sh
-        'harper_ls', -- English grammar
-        'lua_ls', -- Lua
+        'bash-language-server', -- Bash, Zsh, Sh (uses shellcheck and shfmt)
+        'harper-ls', -- English grammar
+        'lua-language-server', -- Lua
         'marksman', -- Markdown
-        'ruff', -- Python
-        'taplo', -- TOML
-        'terraformls', -- Terraform
-        'tflint', -- Terraform linter
-        'yamlls', -- YAML
+        'ruff', -- Python (linter and formatter)
+        'taplo', -- TOML (linter and formatter)
+        'terraform-ls', -- Terraform
+        'tflint', -- Terraform (linter)
+        'yaml-language-server', -- YAML
       },
     },
   },
