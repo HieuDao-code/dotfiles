@@ -6,3 +6,6 @@ spell/
 .venv
 site/
 .zcompdump
+.zsh_sessions/
+.zshrc_backup
+
