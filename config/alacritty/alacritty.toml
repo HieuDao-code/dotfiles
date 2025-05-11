@@ -35,4 +35,4 @@ shell = { program = "/bin/zsh", args = [] }
 
 [font]
 
-normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+normal = { family = "JetBrainsMono Nerd Font" }
