@@ -1,7 +1,7 @@
 # Install Nerd fonts
 echo "$os: Installing Nerd fonts..."
 if [[ "$os" == "osx" ]]; then
-    brew install font-hack-nerd-font
+    brew install font-jetbrains-mono-nerd-font
 
 elif [[ "$os" == "ubuntu" ]]; then
     # Fetch the latest release tag from GitHub API
