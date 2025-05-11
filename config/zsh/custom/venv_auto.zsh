@@ -18,8 +18,6 @@ if [[ ! $DISABLE_VENV_CD -eq 1 ]]; then
           # User may have deactivated manually or via another mechanism
           deactivate
         fi
-        # Clean up regardless
-        unset CD_VENV_PATH
       fi
 
       # Activate the environment only if it is not already active
