@@ -25,4 +25,4 @@ elif [[ "$os" == "ubuntu" ]]; then
         fc-cache -fv
     fi
 fi
-echo "JetBrainsMono Nerd Font ($LATEST_VERSION) installed successfully."
+echo "JetBrainsMono Nerd Font installed successfully."
