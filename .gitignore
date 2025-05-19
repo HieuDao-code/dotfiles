@@ -8,4 +8,5 @@ site/
 .zcompdump
 .zsh_sessions/
 .zshrc_backup
-
+.zprofile
+.zcompcache/
