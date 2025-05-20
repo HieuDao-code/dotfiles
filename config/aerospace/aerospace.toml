@@ -105,10 +105,10 @@ alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
+shift-h = 'focus left'
+shift-j = 'focus down'
+shift-k = 'focus up'
+shift-l = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 alt-shift-h = 'move left'
@@ -123,9 +123,9 @@ alt-equal = 'resize smart +50'
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 alt-1 = 'workspace 1' # Terminal
 alt-2 = 'workspace 2' # Browser
-alt-3 = 'workspace 3' # Chat
-alt-4 = 'workspace 4'
-alt-5 = 'workspace 5'
+alt-3 = 'workspace 3' # Chat/Teams
+alt-4 = 'workspace 4' # Email/Outlook
+alt-5 = 'workspace 5' # Pycharm
 alt-6 = 'workspace 6'
 alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
@@ -173,20 +173,9 @@ down = 'volume down'
 up = 'volume up'
 shift-down = ['volume set 0', 'mode main']
 
-# Automation
-[[on-window-detected]]
-if.app-id = 'org.alacritty'
-run = 'move-node-to-workspace 1'
-
-[[on-window-detected]]
-if.app-id = 'com.google.Chrome'
-run = 'move-node-to-workspace 2'
-
-# Todo: detect for chat app
-
-# Notify Sketchybar about workspace change
-exec-on-workspace-change = [
-  '/bin/bash',
-  '-c',
-  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
-]
+# # Notify Sketchybar about workspace change
+# exec-on-workspace-change = [
+#   '/bin/bash',
+#   '-c',
+#   'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+# ]
