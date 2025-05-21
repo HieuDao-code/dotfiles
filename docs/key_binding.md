@@ -269,7 +269,7 @@ Move selection in visual mode or current line
 
 #### Move window, container and workspace
 
-- `<S-hjkl>` move between window (also work with arrow keys)
+- `<S-Up/Down/Left/Right>` move between window
 - `<Mod-S-hjkl>` move focused to another workspace (also work with arrow keys)
 - `<Mod-(0-9)>` move to workspace by index number
 - `<Mod-S-(0-9)>` move focused container to workspace by index number
