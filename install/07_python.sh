@@ -13,5 +13,5 @@ uv tool install pre-commit
 echo "$os: Install ruff..."
 uv tool install ruff
 echo "$os: Install tox..."
-uv tool install tox
+uv tool install tox --with tox-uv
 
