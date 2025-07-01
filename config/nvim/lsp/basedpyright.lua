@@ -20,7 +20,7 @@ return {
           -- Overwrite Rules which clash with Ruff to keep the Type checking from Pyright
           reportUndefinedVariable = 'none',
         },
-        exclude = { 'cdk.out', '.tox' },
+        exclude = { 'cdk.out', '.tox', 'cdktf.out' },
       },
     },
   },
