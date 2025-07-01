@@ -28,6 +28,14 @@
 
 - `<leader>f` format
 
+#### <abbr title="flash.nvim">Flash</abbr>
+
+- `s` flash
+- `S` flash treesitter
+- `r` remote flash
+- `R` treesitter search
+- `<C-s>` flash toggle
+
 #### Text editing
 
 ##### <abbr title="mini.ai">Around & Inside textobject</abbr>
