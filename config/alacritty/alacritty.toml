@@ -36,4 +36,4 @@ shell = { program = "/bin/zsh", args = [] }
 [font]
 
 normal = { family = "JetBrainsMono Nerd Font" }
-
+size = 15
