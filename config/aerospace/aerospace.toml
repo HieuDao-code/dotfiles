@@ -9,7 +9,8 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = ['exec-and-forget sketchybar']
+# after-startup-command = ['exec-and-forget sketchybar']
+after-startup-command = []
 
 # Start AeroSpace at login
 start-at-login = true
@@ -105,7 +106,6 @@ alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-<<<<<<< Updated upstream
 # alt-h = 'focus left'
 # alt-j = 'focus down'
 # alt-k = 'focus up'
@@ -115,17 +115,6 @@ alt-left = 'focus left'
 alt-down = 'focus down'
 alt-up = 'focus up'
 alt-right = 'focus right'
-=======
-# shift-h = 'focus left'
-# shift-j = 'focus down'
-# shift-k = 'focus up'
-# shift-l = 'focus right'
-
-# shift-left = 'focus left'
-# shift-down = 'focus down'
-# shift-up = 'focus up'
-# shift-right = 'focus right'
->>>>>>> Stashed changes
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 alt-shift-h = 'move left'

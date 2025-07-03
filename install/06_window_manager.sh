@@ -9,6 +9,10 @@ if [[ "$os" == "osx" ]]; then
     # Disable windows opening animations
     defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 
+    # Disable displayshabe seperate Spaces for more stability
+    # see: https://nikitabobko.github.io/AeroSpace/guide#a-note-on-displays-have-separate-spaces
+    defaults write com.apple.spaces spans-displays -bool true && killall SystemUIServer
+
     echo "$os: Installing Sketchybar..."
     brew tap FelixKratz/formulae
     brew install sketchybar

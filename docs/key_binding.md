@@ -1,7 +1,7 @@
 # Key bindings
 
 - `<CR>` Enter
-- `<M>` Meta (Alt)
+- `<M>` Meta (Alt, Option on Mac)
 
 ## Information
 
@@ -265,7 +265,7 @@ Move selection in visual mode or current line
 
 ## <abbr title="Sway (or Aerospace for MacOS)">Window Management</abbr>
 
-- `Mod` is the `Mod4` `(Super)` key
+- `Mod` is the `Mod4` `(Super, Option on Mac)` key
 
 #### Basic
 
