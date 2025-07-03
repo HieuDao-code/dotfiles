@@ -24,7 +24,7 @@ uv tool install pre-commit
 uv tool install ruff
 
 # tox
-uv tool install tox
+uv tool install tox --with tox-uv
 ```
 
 ## Tools
