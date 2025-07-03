@@ -35,7 +35,7 @@ vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
--- Smart Paste without losing clipboard
+-- Smart Paste for visual mode without losing current register
 vim.keymap.set('x', '<leader>p', [["_dP]])
 
 -- local dark_theme = 'kanagawa-wave'
