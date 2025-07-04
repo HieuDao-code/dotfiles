@@ -21,24 +21,7 @@ return {
       -- scroll = { enabled = true },
       -- statuscolumn = { enabled = true },
       -- words = { enabled = true },
-      zen = { enabled = true },
-    },
-    keys = {
-      -- Zen mode
-      {
-        '<leader>z',
-        function()
-          Snacks.zen()
-        end,
-        desc = 'Toggle [Z]en Mode',
-      },
-      {
-        '<leader>Z',
-        function()
-          Snacks.zen.zoom()
-        end,
-        desc = 'Toggle [Z]oom',
-      },
+      -- zen = { enabled = true },
     },
   },
 }

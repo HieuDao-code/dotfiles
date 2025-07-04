@@ -170,11 +170,6 @@ Move selection in visual mode or current line
 - `<leader>xx` toggle trouble diagnostics
 - `<leader>xX` toggle trouble diagnostics buffer
 
-#### <abbr title="snacks.zen">Zen mode</abbr>
-
-- `<leader>z` toggle zen mode
-- `<leader>Z` toggle zoom
-
 #### <abbr title="render-markdown.nvim">Markdown</abbr>
 
 - `<leader>m` toggle markdown rendering
