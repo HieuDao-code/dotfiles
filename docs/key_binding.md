@@ -28,6 +28,12 @@
 
 - `<leader>f` format
 
+#### <abbr title="copilot.lua">Copilot</abbr>
+
+- `<Tab>` accept suggestion
+- `<M-]>` next suggestion
+- `<M-[>` previous suggestion
+
 #### <abbr title="flash.nvim">Flash</abbr>
 
 - `s` flash

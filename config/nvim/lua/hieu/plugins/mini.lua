@@ -18,7 +18,9 @@ return {
     require('mini.move').setup()
 
     -- Mini icons
-    require('mini.icons').setup()
+    local icons = require 'mini.icons'
+    icons.setup()
+    icons.mock_nvim_web_devicons()
 
     -- Snippets Engine
     require('mini.snippets').setup()

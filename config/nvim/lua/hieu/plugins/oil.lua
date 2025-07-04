@@ -4,7 +4,7 @@ return {
   keys = {
     { '-', '<CMD>Oil<CR>', 'n', { desc = 'Open parent directory' } },
   },
-  dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+  dependencies = { { 'echasnovski/mini.nvim', opts = {} } },
   -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
   lazy = false,
   config = function()

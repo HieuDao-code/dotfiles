@@ -26,6 +26,7 @@ return {
         'taplo', -- TOML (linter and formatter)
         'terraform-ls', -- Terraform
         'tflint', -- Terraform (linter)
+        'ty', -- Python
         'yaml-language-server', -- YAML
       },
     },

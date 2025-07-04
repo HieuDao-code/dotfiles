@@ -39,7 +39,7 @@ end
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = {
-    'nvim-tree/nvim-web-devicons',
+    'echasnovski/mini.nvim',
     {
       'letieu/harpoon-lualine',
       dependencies = {

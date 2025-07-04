@@ -63,6 +63,9 @@ if vim.fn.isdirectory(lsp_dir) == 1 then
 end
 vim.lsp.enable(lsp_servers)
 
+-- remove this line once it can replace basedpyright
+vim.lsp.enable('ty', false)
+
 require 'hieu.config.options'
 require 'hieu.config.autocmds'
 require 'hieu.config.keymaps'

@@ -25,6 +25,9 @@ uv tool install ruff
 
 # tox
 uv tool install tox --with tox-uv
+
+# ty
+uv tool install ty@latest
 ```
 
 ## Tools
@@ -37,3 +40,4 @@ uv tool install tox --with tox-uv
 | [ruff](https://github.com/astral-sh/ruff)                       | An extremely fast Python linter and code formatter                         |
 | [uv](https://github.com/astral-sh/uv)                           | An extremely fast Python package and project manager                       |
 | [tox](https://github.com/tox-dev/tox)                           | tox is a generic virtual environment management and test command line tool |
+| [ty](https://github.com/astral-sh/ty)                           | An extremely fast Python type checker and language server                  |

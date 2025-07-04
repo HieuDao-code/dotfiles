@@ -55,6 +55,7 @@ map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)
 
 " Flash.nvim
+" Install the plugin vim-flash
 " Search for string in visible area and jump
 nmap s <Action>(flash.search)
 xmap s <Action>(flash.search)
