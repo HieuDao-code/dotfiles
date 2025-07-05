@@ -14,7 +14,7 @@ return {
     -- 'neovim/nvim-lspconfig',
     'mfussenegger/nvim-dap',
     'mfussenegger/nvim-dap-python', --optional, switch python path for dap when you switch venv
-    'nvim-telescope/telescope.nvim',
+    -- 'nvim-telescope/telescope.nvim',
   },
   branch = 'regexp', -- This is the regexp branch, use this for the new version
   keys = {
