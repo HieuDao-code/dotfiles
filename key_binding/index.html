@@ -1,0 +1,2073 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://hieudao-code.github.io/dotfiles/key_binding/">
+      
+      
+        <link rel="prev" href="../python/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Key bindings - dotfiles</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#key-bindings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="dotfiles" class="md-header__button md-logo" aria-label="dotfiles" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            dotfiles
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Key bindings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/HieuDao-code/dotfiles" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="dotfiles" class="md-nav__button md-logo" aria-label="dotfiles" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    dotfiles
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/HieuDao-code/dotfiles" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alacritty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alacritty
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zsh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zsh
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tmux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tmux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../window_manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Window manager
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neovim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Neovim
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python tooling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Key bindings
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key bindings
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-on-text-and-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working on text and code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working on text and code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autocomplete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autocomplete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoformatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autoformatter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flash
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text editing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Text editing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#around-inside-textobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      Around &amp; Inside textobject
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Move selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surround" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surround
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#treesitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Treesitter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Treesitter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#incremental-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incremental selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Textobjects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap-with-next-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swap with next object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move" class="md-nav__link">
+    <span class="md-ellipsis">
+      Move
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#language-server-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language Server Protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-eval-print-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Read Eval Print Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-adapter-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug Adapter Protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagnostics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-do-comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      To-do comments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#undotree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undotree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#venv-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Venv selection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-files-and-navigating-between-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working with files and navigating between files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with files and navigating between files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#harpoon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Harpoon
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oil
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snacks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Snacks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#top-pickers-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top Pickers &amp; Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tmux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tmux
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tmux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attach-and-detach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attach and detach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Window management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#panes-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panes management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#window-management_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Window Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Window Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-window-container-and-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Move window, container and workspace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scratchpad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scratchpad
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gitsigns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gitsigns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gitsigns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Toggles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-worktree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git worktree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fugitive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fugitive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miscellaneous
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Miscellaneous">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obsidian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obsidian
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-on-text-and-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working on text and code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working on text and code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autocomplete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autocomplete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoformatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autoformatter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flash
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text editing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Text editing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#around-inside-textobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      Around &amp; Inside textobject
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Move selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surround" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surround
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#treesitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Treesitter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Treesitter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#incremental-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incremental selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Textobjects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap-with-next-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swap with next object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move" class="md-nav__link">
+    <span class="md-ellipsis">
+      Move
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#language-server-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language Server Protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-eval-print-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Read Eval Print Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-adapter-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug Adapter Protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagnostics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-do-comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      To-do comments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#undotree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undotree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#venv-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Venv selection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-files-and-navigating-between-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working with files and navigating between files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with files and navigating between files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#harpoon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Harpoon
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oil
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snacks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Snacks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#top-pickers-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top Pickers &amp; Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grep
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tmux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tmux
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tmux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attach-and-detach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attach and detach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Window management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#panes-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panes management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#window-management_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Window Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Window Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-window-container-and-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Move window, container and workspace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scratchpad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scratchpad
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gitsigns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gitsigns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gitsigns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Toggles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-worktree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git worktree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fugitive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fugitive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miscellaneous
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Miscellaneous">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obsidian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obsidian
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="key-bindings">Key bindings</h1>
+<ul>
+<li><code>&lt;CR&gt;</code> Enter</li>
+<li><code>&lt;M&gt;</code> Meta (Alt, Option on Mac)</li>
+</ul>
+<h2 id="information">Information</h2>
+<ul>
+<li><code>&lt;space&gt;</code> leader key</li>
+<li><code>:checkhealth [&lt;pluginname&gt;]</code> check base or plugin status</li>
+<li><code>:checkhealth lsp</code> show details of LSP attached to buffer</li>
+<li><code>:Lazy</code> or <code>&lt;leader&gt;l</code> show package manager UI</li>
+<li><code>:Lazy profile</code> show startup time</li>
+<li><code>:Mason</code> or <code>&lt;leader&gt;M</code> show Mason UI</li>
+<li><code>:TSUpdate</code> update all Tree-sitter parsers</li>
+<li><code>:ConformInfo</code> autoformatter information</li>
+</ul>
+<h2 id="working-on-text-and-code">Working on text and code</h2>
+<h4 id="autocomplete"><abbr title="blink.cmp">Autocomplete </abbr></h4>
+<ul>
+<li><code>&lt;C-space&gt;</code> show autocompletion manually</li>
+<li><code>&lt;CR&gt;</code> select and accept</li>
+<li><code>&lt;C-p&gt;</code> select previous</li>
+<li><code>&lt;C-n&gt;</code> select next</li>
+<li><code>&lt;C-k&gt;</code> select signature</li>
+</ul>
+<h4 id="autoformatter"><abbr title="conform.nvim">Autoformatter</abbr></h4>
+<ul>
+<li><code>&lt;leader&gt;f</code> format</li>
+</ul>
+<h4 id="copilot"><abbr title="copilot.lua">Copilot</abbr></h4>
+<ul>
+<li><code>&lt;Tab&gt;</code> accept suggestion</li>
+<li><code>&lt;M-]&gt;</code> next suggestion</li>
+<li><code>&lt;M-[&gt;</code> previous suggestion</li>
+</ul>
+<h4 id="flash"><abbr title="flash.nvim">Flash</abbr></h4>
+<ul>
+<li><code>s</code> flash</li>
+<li><code>S</code> flash treesitter</li>
+<li><code>r</code> remote flash</li>
+<li><code>R</code> treesitter search</li>
+<li><code>&lt;C-s&gt;</code> flash toggle</li>
+</ul>
+<h4 id="text-editing">Text editing</h4>
+<h5 id="around-inside-textobject"><abbr title="mini.ai">Around &amp; Inside textobject</abbr></h5>
+<ul>
+<li><code>a</code> around</li>
+<li><code>i</code> inside</li>
+<li><code>g[</code> goto start of <code>a</code> textobject</li>
+<li><code>g]</code> goto end of <code>a</code> textobject</li>
+</ul>
+<h5 id="move-selection"><abbr title="mini.move">Move selection </abbr></h5>
+<p>Move selection in visual mode or current line</p>
+<ul>
+<li><code>&lt;M-h&gt;</code> left</li>
+<li><code>&lt;M-j&gt;</code> down</li>
+<li><code>&lt;M-k&gt;</code> up</li>
+<li><code>&lt;M-l&gt;</code> right</li>
+</ul>
+<h5 id="surround"><abbr title="mini.surround">Surround</abbr></h5>
+<ul>
+<li><code>ys{motion}{char}</code> add surrounding in Normal and Visual modes</li>
+<li><code>ds{char}</code> delete surrounding</li>
+<li>
+<p><code>cs{target}{replacement}</code> replace surrounding</p>
+</li>
+<li>
+<p><code>l</code> suffix to search with "prev" method</p>
+</li>
+<li><code>n</code> suffix to search with "next" method</li>
+</ul>
+<h4 id="treesitter"><abbr title="nvim-treesitter">Treesitter</abbr></h4>
+<h5 id="incremental-selection">Incremental selection</h5>
+<ul>
+<li><code>&lt;C-space&gt;</code> init selection</li>
+<li><code>&lt;C-space&gt;</code> node incremental</li>
+<li><code>bs</code> node decremental</li>
+</ul>
+<h5 id="textobjects">Textobjects</h5>
+<ul>
+<li><code>af</code> select outer part of a method/function definition</li>
+<li><code>if</code> select inner part of a method/function definition</li>
+<li><code>ac</code> select outer part of a class</li>
+<li><code>ic</code> select inner part of a class</li>
+</ul>
+<h5 id="swap-with-next-object">Swap with next object</h5>
+<ul>
+<li><code>&lt;leader&gt;na</code> swap parameter/argument with next</li>
+<li><code>&lt;leader&gt;pa</code> swap parameter/argument with next</li>
+<li><code>&lt;leader&gt;nm</code> swap function with next</li>
+<li><code>&lt;leader&gt;pm</code> swap function with next</li>
+</ul>
+<h5 id="move">Move</h5>
+<ul>
+<li><code>]f</code> next method/function def start</li>
+<li><code>]F</code> next method/function def end</li>
+<li><code>]c</code> next class start</li>
+<li><code>]C</code> next class end</li>
+<li><code>]a</code> next parameter/argument start</li>
+<li>
+<p><code>]A</code> next parameter/argument end</p>
+</li>
+<li>
+<p><code>[f</code> prev method/function def start</p>
+</li>
+<li><code>[F</code> prev method/function def end</li>
+<li>
+<p><code>[c</code> prev class start</p>
+</li>
+<li>
+<p><code>[a</code> prev parameter/argument start</p>
+</li>
+<li><code>[A</code> prev parameter/argument end</li>
+</ul>
+<h4 id="language-server-protocol">Language Server Protocol</h4>
+<ul>
+<li><code>grn</code> rename variable</li>
+<li><code>gra</code> go to code action</li>
+<li><code>grr</code> go to references</li>
+<li><code>gri</code> go to implementation</li>
+<li><code>grd</code> go to definition</li>
+<li><code>grD</code> go to declaration</li>
+<li><code>grt</code> go to type definition</li>
+<li><code>&lt;leader&gt;ss</code> open document symbols</li>
+<li><code>&lt;leader&gt;sS</code> open workspace symbols</li>
+<li><code>&lt;leader&gt;th</code> toggle inlay hints</li>
+</ul>
+<h4 id="read-eval-print-loop"><abbr title="iron.nvim">Read Eval Print Loop</abbr></h4>
+<ul>
+<li><code>&lt;space&gt;rc</code> send motion or visual</li>
+<li><code>&lt;space&gt;rf</code> send whole file</li>
+<li><code>&lt;space&gt;rl</code> send line below cursor</li>
+<li><code>&lt;space&gt;rms</code> send the marked chunked</li>
+<li><code>&lt;space&gt;rmc</code> marks text object</li>
+<li><code>&lt;space&gt;rmc</code> marks visual selection</li>
+<li><code>&lt;space&gt;rmd</code> removes set mark</li>
+<li><code>&lt;space&gt;r&lt;cr&gt;</code> sends a return to the REPL</li>
+<li><code>&lt;space&gt;r&lt;space&gt;</code> sends a <code>&lt;C-c&gt;</code> signal to the REPL</li>
+<li><code>&lt;space&gt;rq</code> exits the REPL</li>
+<li>
+<p><code>&lt;space&gt;rx</code> clears the REPL window</p>
+</li>
+<li>
+<p><code>&lt;space&gt;rs</code> open REPL for current or given filetype</p>
+</li>
+<li><code>&lt;space&gt;rr</code> restart the current REPL</li>
+<li><code>&lt;space&gt;rF</code> focuses on the repl for current or given filetype</li>
+<li><code>&lt;space&gt;rh</code> hide the repl window for current or given filetype</li>
+</ul>
+<h4 id="testing"><abbr title="neotest">Testing</abbr></h4>
+<ul>
+<li><code>&lt;leader&gt;tt</code> test run file</li>
+<li><code>&lt;leader&gt;tT</code> test run all test files</li>
+<li><code>&lt;leader&gt;tr</code> test run nearest</li>
+<li><code>&lt;leader&gt;tl</code> test run last</li>
+<li><code>&lt;leader&gt;ts</code> test toggle summary</li>
+<li><code>&lt;leader&gt;to</code> test show output</li>
+<li><code>&lt;leader&gt;tO</code> test toggle output panel</li>
+<li><code>&lt;leader&gt;tS</code> test stop</li>
+<li><code>&lt;leader&gt;tw</code> test toggle watch</li>
+</ul>
+<h4 id="debug-adapter-protocol"><abbr title="nvim.dap">Debug Adapter Protocol</abbr></h4>
+<ul>
+<li><code>&lt;F5&gt;</code> start/continue</li>
+<li><code>&lt;F1&gt;</code> step into</li>
+<li><code>&lt;F2&gt;</code> step over</li>
+<li><code>&lt;F3&gt;</code> step out</li>
+<li><code>&lt;leader&gt;db</code> toggle breakpoint</li>
+<li><code>&lt;leader&gt;dB</code> set breakpoint condition</li>
+<li><code>&lt;leader&gt;dr</code> toggle REPL</li>
+<li><code>&lt;leader&gt;dq</code> toggle terminate debugger</li>
+<li>
+<p><code>&lt;leader&gt;du</code> toggle debugger ui</p>
+</li>
+<li>
+<p><code>&lt;leader&gt;dn</code> test method</p>
+</li>
+<li><code>&lt;leader&gt;df</code> test class</li>
+<li><code>&lt;leader&gt;ds</code> debug selection</li>
+</ul>
+<h4 id="diagnostics">Diagnostics</h4>
+<ul>
+<li><code>&lt;leader&gt;q</code> open diagnostic quickfix list</li>
+<li><code>]d</code> move next diagnostics in the current buffer</li>
+<li>
+<p><code>[d</code> move previous diagnostics in the current buffer</p>
+</li>
+<li>
+<p><code>&lt;leader&gt;xx</code> toggle trouble diagnostics</p>
+</li>
+<li><code>&lt;leader&gt;xX</code> toggle trouble diagnostics buffer</li>
+</ul>
+<h4 id="markdown"><abbr title="render-markdown.nvim">Markdown</abbr></h4>
+<ul>
+<li><code>&lt;leader&gt;m</code> toggle markdown rendering</li>
+</ul>
+<h4 id="to-do-comments"><abbr title="todo-comments.nvim">To-do comments</abbr></h4>
+<ul>
+<li><code>]t</code> move to next to-do comments</li>
+<li><code>[t</code> move to previous to-do comments</li>
+</ul>
+<h4 id="undotree"><abbr title="undotree">Undotree</abbr></h4>
+<ul>
+<li><code>&lt;leader&gt;u</code> toggle undotree (use <code>?</code> for help)</li>
+<li><code>J</code> move to the previous undo state</li>
+<li><code>K</code> move to the next undo state</li>
+</ul>
+<h4 id="venv-selection"><abbr title="venv-selector.nvim">Venv selection</abbr></h4>
+<ul>
+<li><code>&lt;leader&gt;v</code> search and activate a python virtual environment</li>
+</ul>
+<h2 id="working-with-files-and-navigating-between-files">Working with files and navigating between files</h2>
+<h4 id="harpoon"><abbr title="harpoon">Harpoon</abbr></h4>
+<ul>
+<li><code>&lt;leader&gt;h</code> attach harpoon to file</li>
+<li><code>&lt;C-e&gt;</code> open harpoon quick menu</li>
+<li><code>&lt;leader&gt;1-5</code> open harpoon file by index number</li>
+</ul>
+<h4 id="oil"><abbr title="oil.nvim">Oil</abbr></h4>
+<ul>
+<li><code>-</code> open parent directory</li>
+</ul>
+<h4 id="snacks"><abbr title="snacks.nvim">Snacks</abbr></h4>
+<h5 id="top-pickers-explorer">Top Pickers &amp; Explorer</h5>
+<ul>
+<li><code>&lt;leader&gt;&lt;space&gt;</code> smart find files</li>
+<li><code>&lt;leader&gt;,</code> buffers</li>
+<li><code>&lt;leader&gt;/</code> grep</li>
+<li><code>&lt;leader&gt;:</code> command history</li>
+<li><code>&lt;leader&gt;n</code> notification history</li>
+<li><code>&lt;leader&gt;e</code> file explorer</li>
+</ul>
+<h5 id="find">Find</h5>
+<ul>
+<li><code>&lt;leader&gt;fb</code> buffers</li>
+<li><code>&lt;leader&gt;fc</code> find config file</li>
+<li><code>&lt;leader&gt;fd</code> find dotfiles file</li>
+<li><code>&lt;leader&gt;ff</code> find files</li>
+<li><code>&lt;leader&gt;fg</code> find git files</li>
+<li><code>&lt;leader&gt;fp</code> projects</li>
+<li><code>&lt;leader&gt;fr</code> recent</li>
+</ul>
+<h5 id="grep">Grep</h5>
+<ul>
+<li><code>&lt;leader&gt;sb</code> buffer lines</li>
+<li><code>&lt;leader&gt;sb</code> grep open buffers</li>
+<li><code>&lt;leader&gt;sg</code> grep</li>
+<li><code>&lt;leader&gt;sw</code> visual selection or word</li>
+</ul>
+<h5 id="search">Search</h5>
+<ul>
+<li><code>&lt;leader&gt;s"</code> registers</li>
+<li><code>&lt;leader&gt;s/</code> search history</li>
+<li><code>&lt;leader&gt;sa</code> autocmds</li>
+<li><code>&lt;leader&gt;sb</code> buffer lines</li>
+<li><code>&lt;leader&gt;sc</code> command history</li>
+<li><code>&lt;leader&gt;sC</code> commands</li>
+<li><code>&lt;leader&gt;sd</code> diagnostics</li>
+<li><code>&lt;leader&gt;sD</code> buffer diagnostics</li>
+<li><code>&lt;leader&gt;sh</code> help pages</li>
+<li><code>&lt;leader&gt;sH</code> highlights</li>
+<li><code>&lt;leader&gt;si</code> icons</li>
+<li><code>&lt;leader&gt;sj</code> jumps</li>
+<li><code>&lt;leader&gt;sk</code> keymaps</li>
+<li><code>&lt;leader&gt;sl</code> location list</li>
+<li><code>&lt;leader&gt;sm</code> marks</li>
+<li><code>&lt;leader&gt;sM</code> man pages</li>
+<li><code>&lt;leader&gt;sp</code> search for plugin spec</li>
+<li><code>&lt;leader&gt;sq</code> quickfix list</li>
+<li><code>&lt;leader&gt;sR</code> resume</li>
+<li><code>&lt;leader&gt;su</code> undo history</li>
+<li><code>&lt;leader&gt;uC</code> colorschemes</li>
+</ul>
+<h4 id="tmux"><abbr title="tmux">Tmux</abbr></h4>
+<ul>
+<li><code>&lt;prefix&gt;</code> key is <code>&lt;C-a&gt;</code></li>
+<li><code>&lt;prefix&gt;&lt;S-i&gt;</code> install new plugins</li>
+<li><code>&lt;prefix&gt;&lt;S-r&gt;</code> refresh config file</li>
+</ul>
+<h5 id="attach-and-detach">Attach and detach</h5>
+<ul>
+<li><code>tmux</code> start new tmux session</li>
+<li><code>tmux ls</code> list active tmux sessions</li>
+<li><code>tmux attach</code> attach to tmux session running in the background</li>
+<li><code>&lt;prefix&gt;d</code> detach from tmux session, leaving it running in the background</li>
+<li><code>&lt;prefix&gt;&amp;</code> exit and quit tmux</li>
+<li><code>&lt;prefix&gt;?</code> list all keybindings (press Q to exit help screen)</li>
+</ul>
+<h5 id="window-management">Window management</h5>
+<ul>
+<li><code>&lt;prefix&gt;c</code> create new window</li>
+<li><code>&lt;M-S-h&gt;</code> or <code>&lt;S-Left&gt;</code> move to previous window</li>
+<li><code>&lt;M-S-l&gt;</code> or <code>&lt;S-Right&gt;</code> move to next window</li>
+<li><code>&lt;prefix&gt;0-9</code> move to window by index number</li>
+</ul>
+<h5 id="session-management">Session management</h5>
+<ul>
+<li><code>&lt;prefix&gt;)</code> move to next session</li>
+<li><code>&lt;prefix&gt;(</code> move to previous session</li>
+<li><code>&lt;prefix&gt;&lt;C-z&gt;</code> suspend session</li>
+<li><code>&lt;prefix&gt;s</code> select a new session interactively</li>
+<li><code>&lt;prefix&gt;f</code> tmux sessionizer (<code>&lt;leader&gt;f</code> if not in tmux)</li>
+</ul>
+<h5 id="panes-management">Panes management</h5>
+<ul>
+<li><code>&lt;prefix&gt;%</code> split horizontally (panes side by side)</li>
+<li><code>&lt;prefix&gt;"</code> split vertically (one pane below the other)</li>
+<li><code>&lt;prefix&gt;h-j-k-l</code> or <code>&lt;M-Up/Down/Left/Right&gt;</code> move to other pane</li>
+<li><code>&lt;prefix&gt;x</code> close current pane</li>
+<li><code>&lt;prefix&gt;!</code> remove all panes but the current one from the window</li>
+<li><code>&lt;prefix&gt;q</code> display window index numbers</li>
+<li><code>&lt;prefix&gt;&lt;Up/Down&gt;</code> resize current pane (due north/south)</li>
+<li><code>&lt;prefix&gt;&lt;Left/Right&gt;</code> resize current pane (due west/east)</li>
+</ul>
+<h2 id="window-management_1"><abbr title="Sway (or Aerospace for MacOS)">Window Management</abbr></h2>
+<ul>
+<li><code>Mod</code> is the <code>Mod4</code> <code>(Super, Option on Mac)</code> key</li>
+</ul>
+<h4 id="basic">Basic</h4>
+<ul>
+<li><code>&lt;Mod-Return&gt;</code> start the terminal</li>
+<li><code>&lt;Mod-S-q&gt;</code> kill focused window</li>
+<li><code>&lt;Mod-d&gt;</code> start launcher</li>
+<li><code>&lt;Mod-S-c&gt;</code> reload configuration file</li>
+<li><code>&lt;Mod-S-e&gt;</code> exit session (logout)</li>
+</ul>
+<h4 id="move-window-container-and-workspace">Move window, container and workspace</h4>
+<ul>
+<li><code>&lt;Mod-Up/Down/Left/Right&gt;</code> move between window</li>
+<li><code>&lt;Mod-S-hjkl&gt;</code> move focused to another workspace (also work with arrow keys)</li>
+<li><code>&lt;Mod-(0-9)&gt;</code> move to workspace by index number</li>
+<li><code>&lt;Mod-S-(0-9)&gt;</code> move focused container to workspace by index number</li>
+<li><code>&lt;Mod-LeftMouse&gt;</code> (<code>&lt;Mod-CMD-LeftMouse&gt;</code> on MacOS) move a window with mouse</li>
+<li><code>&lt;Mod-RightMouse&gt;</code> (<code>&lt;Mod-CMD-RightMouse&gt;</code> on MacOS) resize a window with mouse</li>
+</ul>
+<h4 id="layout">Layout</h4>
+<ul>
+<li><code>&lt;Mod-b&gt;</code> split horizontally</li>
+<li><code>&lt;Mod-v&gt;</code> split vertically</li>
+<li><code>&lt;Mod-f&gt;</code> toggle the current focus fullscreen</li>
+</ul>
+<h4 id="scratchpad">Scratchpad</h4>
+<ul>
+<li><code>&lt;Mod-S-Minus&gt;</code> move the focused window to scratchpad</li>
+<li><code>&lt;Mod-Minus&gt;</code> toggle to scratchpad window</li>
+</ul>
+<h2 id="git-integration">Git Integration</h2>
+<h4 id="gitsigns"><abbr title="gitsigns.nvim">Gitsigns</abbr></h4>
+<h5 id="navigation">Navigation</h5>
+<ul>
+<li><code>]c</code> jump to next git change</li>
+<li><code>]c</code> jump to previous git change</li>
+</ul>
+<h5 id="visual-mode">Visual mode</h5>
+<ul>
+<li><code>&lt;leader&gt;gs</code> git stage hunk</li>
+<li><code>&lt;leader&gt;gr</code> git reset hunk</li>
+</ul>
+<h5 id="normal-mode">Normal mode</h5>
+<ul>
+<li><code>&lt;leader&gt;gs</code> git stage hunk</li>
+<li><code>&lt;leader&gt;gr</code> git reset hunk</li>
+<li><code>&lt;leader&gt;gu</code> git undo stage hunk</li>
+<li><code>&lt;leader&gt;gp</code> git preview hunk</li>
+<li><code>&lt;leader&gt;gS</code> git stage buffer</li>
+<li><code>&lt;leader&gt;gR</code> git reset buffer</li>
+<li><code>&lt;leader&gt;gb</code> git blame line</li>
+<li><code>&lt;leader&gt;gB</code> git blame</li>
+<li><code>&lt;leader&gt;gd</code> git diff against index</li>
+<li><code>&lt;leader&gt;gD</code> git diff against last commit</li>
+</ul>
+<h5 id="toggles">Toggles</h5>
+<ul>
+<li><code>&lt;leader&gt;gtb</code> toggle git show blame line</li>
+<li><code>&lt;leader&gt;gtD</code> toggle git show deleted</li>
+</ul>
+<h4 id="git-worktree"><abbr title="git-worktree.nvim">Git worktree</abbr></h4>
+<ul>
+<li><code>&lt;leader&gt;gw</code> git worktree menu</li>
+<li><code>&lt;leader&gt;gc</code> git create worktree</li>
+</ul>
+<h4 id="fugitive"><abbr title="vim-fugitive">Fugitive</abbr></h4>
+<ul>
+<li><code>:G</code> or <code>&lt;leader&gt;gg</code> open git summary window</li>
+<li><code>:G {git command}</code> equals to <code>git {git command}</code></li>
+</ul>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<h4 id="obsidian"><abbr title="obsidian.nvim">Obsidian</abbr></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

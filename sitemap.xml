@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://hieudao-code.github.io/dotfiles/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hieudao-code.github.io/dotfiles/alacritty/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hieudao-code.github.io/dotfiles/key_binding/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hieudao-code.github.io/dotfiles/neovim/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hieudao-code.github.io/dotfiles/python/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hieudao-code.github.io/dotfiles/tmux/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hieudao-code.github.io/dotfiles/window_manager/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hieudao-code.github.io/dotfiles/zsh/</loc>
+         <lastmod>2025-07-05</lastmod>
+    </url>
+</urlset>
