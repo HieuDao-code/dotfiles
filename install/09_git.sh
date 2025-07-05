@@ -1,7 +1,7 @@
 # Install git related packages
 echo "$os: Installing Lazygit..."
 if [[ "$os" == "osx" ]]; then
-    brew install lazygit
+    brew install jesseduffield/lazygit/lazygit
 
 elif [[ "$os" == "ubuntu" ]]; then
     LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
