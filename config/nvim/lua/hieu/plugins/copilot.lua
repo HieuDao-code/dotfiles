@@ -1,6 +1,7 @@
 -- Github copilot
 return {
   'zbirenbaum/copilot.lua',
+  enabled = vim.fn.has 'macunix' == 1,
   cmd = 'Copilot',
   event = 'InsertEnter',
   opts = {

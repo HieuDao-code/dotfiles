@@ -14,6 +14,12 @@ Install python tools via uv:
 # commitizen
 uv tool install commitizen
 
+# ipython
+uv tool install ipython --with ipykernel
+
+# jupyter lab
+uv tool install jupyterlab
+
 # mkdocs material
 uv tool install mkdocs --with mkdocs-material
 
@@ -35,6 +41,8 @@ uv tool install ty@latest
 | Name                                                            | Description                                                                |
 | --------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | [commitizen](https://github.com/commitizen-tools/commitizen)    | Commitizen is release management tool designed for teams                   |
+| [ipython](https://github.com/ipython/ipython)                   | Python interactively with jupyter.                                         |
+| [jupyterlab](https://github.com/jupyterlab/jupyterlab)          | An extensible environment for interactive and reproducible computing.      |
 | [mkdocs-material](https://github.com/squidfunk/mkdocs-material) | A powerful documentation framework on top of MkDocs                        |
 | [pre-commit](https://github.com/pre-commit/pre-commit)          | A framework for managing and maintaining multi-language pre-commit hooks   |
 | [ruff](https://github.com/astral-sh/ruff)                       | An extremely fast Python linter and code formatter                         |
