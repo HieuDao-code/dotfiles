@@ -5,7 +5,9 @@
 -- <c-d> - deletes that worktree
 -- <c-f> - toggles forcing of the next deletion
 return {
+  -- use polarmutex/git-worktree.nvim when converting to snacks.picker
   'ThePrimeagen/git-worktree.nvim',
+  enabled = false,
   dependencies = {
     'nvim-lua/plenary.nvim',
     'nvim-telescope/telescope.nvim',
