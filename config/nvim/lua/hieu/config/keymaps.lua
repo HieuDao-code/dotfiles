@@ -38,6 +38,9 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 -- Smart Paste for visual mode without losing current register
 vim.keymap.set('x', '<leader>p', [["_dP]])
 
+-- Save file
+vim.keymap.set('n', '<C-s>', ':w<CR>', { desc = 'Save file' })
+
 -- Open Lazy
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { desc = '[L]azy Menu' })
 
