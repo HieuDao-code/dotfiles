@@ -116,8 +116,8 @@ Move selection in visual mode or current line
 - `grd` go to definition
 - `grD` go to declaration
 - `grt` go to type definition
-- `g0` open document symbols
-- `gW` open workspace symbols
+- `<leader>ss` open document symbols
+- `<leader>sS` open workspace symbols
 - `<leader>th` toggle inlay hints
 
 #### <abbr title="iron.nvim">Read Eval Print Loop</abbr>
@@ -207,21 +207,57 @@ Move selection in visual mode or current line
 
 - `-` open parent directory
 
-#### <abbr title="telescope.nvim">Telescope</abbr>
+#### <abbr title="snacks.nvim">Snacks</abbr>
 
-- `<leader>sh` search help
-- `<leader>sk` search keymaps
-- `<leader>sf` search files
-- `<leader>ss` search select telescope
-- `<leader>sw` search current word
-- `<leader>sg` search by grep
-- `<leader>sr` search resume
-- `<leader>s.` search recent files ("." for repeat)
-- `<leader>sb` search existing buffers
-- `<leader>/` fuzzily search in current buffer
-- `<leader>s/` search in open files
-- `<leader>sn` search neovim files
-- `<leader>sd` search dotfiles
+##### Top Pickers & Explorer
+
+- `<leader><space>` smart find files
+- `<leader>,` buffers
+- `<leader>/` grep
+- `<leader>:` command history
+- `<leader>n` notification history
+- `<leader>e` file explorer
+
+##### Find
+
+- `<leader>fb` buffers
+- `<leader>fc` find config file
+- `<leader>fd` find dotfiles file
+- `<leader>ff` find files
+- `<leader>fg` find git files
+- `<leader>fp` projects
+- `<leader>fr` recent
+
+##### Grep
+
+- `<leader>sb` buffer lines
+- `<leader>sb` grep open buffers
+- `<leader>sg` grep
+- `<leader>sw` visual selection or word
+
+##### Search
+
+- `<leader>s"` registers
+- `<leader>s/` search history
+- `<leader>sa` autocmds
+- `<leader>sb` buffer lines
+- `<leader>sc` command history
+- `<leader>sC` commands
+- `<leader>sd` diagnostics
+- `<leader>sD` buffer diagnostics
+- `<leader>sh` help pages
+- `<leader>sH` highlights
+- `<leader>si` icons
+- `<leader>sj` jumps
+- `<leader>sk` keymaps
+- `<leader>sl` location list
+- `<leader>sm` marks
+- `<leader>sM` man pages
+- `<leader>sp` search for plugin spec
+- `<leader>sq` quickfix list
+- `<leader>sR` resume
+- `<leader>su` undo history
+- `<leader>uC` colorschemes
 
 #### <abbr title="tmux">Tmux</abbr>
 

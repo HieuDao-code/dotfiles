@@ -38,6 +38,9 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 -- Smart Paste for visual mode without losing current register
 vim.keymap.set('x', '<leader>p', [["_dP]])
 
+-- Open Lazy
+vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { desc = '[L]azy Menu' })
+
 local dark_theme = 'catppuccin-mocha'
 local light_theme = 'catppuccin-latte'
 vim.o.background = 'light'
